@@ -1,0 +1,14 @@
+# Simple LAN-only deployment (no reverse proxy needed).
+# Publishes port 8080 on the host. Access at  http://<lxc-ip>:8080
+# This is the quickest path and the one documented in PLAN.md.
+#
+# Deploy this file standalone, OR via Portainer (Stacks -> set compose path to
+# docker-compose.lan.yml). Use this when you do NOT run a reverse proxy.
+services:
+  wc2026:
+    build: .
+    image: wc2026:latest
+    container_name: wc2026
+    restart: unless-stopped
+    ports:
+      - "8080:80"   # change the left number to avoid clashes with other stacks

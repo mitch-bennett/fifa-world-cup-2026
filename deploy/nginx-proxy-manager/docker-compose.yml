@@ -1,0 +1,39 @@
+# Nginx Proxy Manager (NPM) — one reverse proxy for ALL your sites.
+# Deploy this as its own Portainer stack. Every website stack then joins the
+# shared external "proxy" network and NPM routes to each by hostname.
+#
+# Prereq (run once on the host / LXC):
+#   docker network create proxy
+#
+# After deploy:
+#   1. Open the admin UI at  http://<lxc-ip>:81
+#   2. Default login:  admin@example.com  /  changeme   (change immediately)
+#   3. Hosts -> Proxy Hosts -> Add:
+#        Domain Names:     worldcup.home
+#        Forward Hostname: wc2026        (the container_name on the proxy network)
+#        Forward Port:     80
+#      Repeat for each site (siteb.home -> siteb:80, etc.)
+#   4. Make the hostnames resolve on your LAN (Pi-hole / router DNS / hosts file)
+#      -> point them at the LXC IP. See DEPLOYMENT.md.
+services:
+  npm:
+    image: jc21/nginx-proxy-manager:latest
+    container_name: nginx-proxy-manager
+    restart: unless-stopped
+    ports:
+      - "80:80"     # HTTP  (proxied sites)
+      - "443:443"   # HTTPS (proxied sites)
+      - "81:81"     # NPM admin UI
+    volumes:
+      - npm_data:/data
+      - npm_letsencrypt:/etc/letsencrypt
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: true
+
+volumes:
+  npm_data:
+  npm_letsencrypt:

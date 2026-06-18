@@ -1,0 +1,23 @@
+# Proxy-ready deployment.
+# The site publishes NO host ports; a reverse proxy (e.g. Nginx Proxy Manager)
+# on the shared external "proxy" network reaches it at  wc2026:80.
+#
+# Prereqs (run once on the host / LXC):
+#   docker network create proxy
+#   ...then deploy the nginx-proxy-manager stack (see deploy/nginx-proxy-manager/).
+#
+# In NPM, add a Proxy Host:  domain worldcup.home  ->  forward to  wc2026 : 80
+#
+# For a simple LAN-only deploy WITHOUT a reverse proxy, use docker-compose.lan.yml instead.
+services:
+  wc2026:
+    build: .
+    image: wc2026:latest
+    container_name: wc2026
+    restart: unless-stopped
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: true
