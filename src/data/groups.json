@@ -1,0 +1,14 @@
+[
+  { "group": "A", "teams": ["USA"] },
+  { "group": "B", "teams": ["MEX"] },
+  { "group": "C", "teams": ["CAN"] },
+  { "group": "D", "teams": ["BRA"] },
+  { "group": "E", "teams": ["ARG"] },
+  { "group": "F", "teams": ["FRA"] },
+  { "group": "G", "teams": ["ENG"] },
+  { "group": "H", "teams": ["GER"] },
+  { "group": "I", "teams": ["ESP"] },
+  { "group": "J", "teams": ["JPN"] },
+  { "group": "K", "teams": ["MAR"] },
+  { "group": "L", "teams": ["SEN"] }
+]
