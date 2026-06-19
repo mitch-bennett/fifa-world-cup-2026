@@ -119,17 +119,30 @@ nav {
 }
 
 .globe-panel {
-  min-height: 600px;
+  min-height: 0;
+}
+
+.title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 }
 
 .globe-canvas {
-  margin-top: 0.5rem;
-  height: 540px;
+  margin-top: 0.75rem;
+  min-height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .globe-canvas canvas {
-  width: 100% !important;
-  height: 100% !important;
+  max-width: 100%;
+}
+
+.home-preview > .country-summary {
+  margin-top: 0.75rem;
 }
 
 .country-summary .summary-head {
@@ -294,17 +307,12 @@ td {
 }
 
 @media (max-width: 980px) {
-  .hero-grid,
   .profile-grid {
     grid-template-columns: 1fr;
   }
 
-  .globe-panel {
-    min-height: 420px;
-  }
-
-  .globe-canvas {
-    height: 360px;
+  .title-row {
+    flex-wrap: wrap;
   }
 
   .nav-shell {

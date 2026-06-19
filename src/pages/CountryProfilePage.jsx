@@ -85,7 +85,8 @@ export default function CountryProfilePage() {
       </div>
 
       <article className="card">
-        <h3>Fixtures</h3>
+        <h3>Fixtures (Sample Data)</h3>
+        <p className="empty">These are seeded sample fixtures for UI testing, not final official matches.</p>
         {fixtures.length === 0 ? (
           <p className="empty">No fixtures in the initial dataset yet.</p>
         ) : (

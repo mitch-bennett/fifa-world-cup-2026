@@ -7,23 +7,34 @@ const GlobeView = lazy(() => import('../components/GlobeView'));
 export default function HomePage() {
   const { countries, byCode } = useCountries();
   const [selectedCode, setSelectedCode] = useState(countries[0]?.code || null);
+  const [isSpinning, setIsSpinning] = useState(false);
 
   const selectedCountry = useMemo(() => byCode[selectedCode], [byCode, selectedCode]);
 
   return (
-    <section className="hero-grid">
+    <section className="stack-lg">
       <div className="card globe-panel">
-        <h2>Interactive Globe</h2>
+        <div className="title-row">
+          <h2>Interactive Globe</h2>
+          <button
+            type="button"
+            className="reset-btn"
+            onClick={() => setIsSpinning((current) => !current)}
+          >
+            {isSpinning ? 'Pause spin' : 'Play spin'}
+          </button>
+        </div>
         <p>Click a highlighted country to open a preview before navigating to the full profile.</p>
         <Suspense fallback={<p className="empty">Loading globe...</p>}>
           <GlobeView
             countries={countries}
             selectedCode={selectedCode}
             onCountrySelect={setSelectedCode}
+            autoRotate={isSpinning}
           />
         </Suspense>
       </div>
-      <aside>
+      <aside className="card home-preview">
         <h2>Country Preview</h2>
         {selectedCountry ? (
           <CountrySummary country={selectedCountry} />
