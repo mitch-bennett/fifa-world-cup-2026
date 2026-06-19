@@ -8,7 +8,7 @@ This project distinguishes between `sample`, `partial-official`, and `official` 
 - Scope in repo:
   - Full 48-team groups (A-L)
   - Full 104-match schedule
-  - Seeded sample results for matches 1-24 (opening round) to enable standings/UI validation
+  - Official verified results for completed fixtures currently populated through match 12
 
 ## Source References
 
@@ -23,12 +23,19 @@ Primary references:
 Structured secondary source used to complete machine-readable fixture rows:
 - https://www.fifaworldcupnews.com/fifa-world-cup-2026-fixtures/
 
+Official result verification pages:
+- https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums
+- https://www.fifa.com/fr/tournaments/mens/worldcup/canadamexicousa2026/articles/resumes-11-juin-2026
+- https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fwc26-germany-curacao-group-e-highlights
+- https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fwc26-netherlands-japan-group-f-highlights
+- https://www.fifa.com/fr/tournaments/mens/worldcup/canadamexicousa2026/articles/fwc26-sweden-tunisia-group-f-highlights
+
 ## Normalization Notes
 
 - Group-stage fixtures (matches 1-72) were parsed from structured secondary tables and code-mapped to the project schema.
 - Official FIFA PDF match numbers and kickoff times were used to normalize all 104 match IDs and times.
 - Knockout fixtures use pathway placeholders (`1A`, `W97`, etc.) until participants are determined.
-- Result fields (`homeScore`, `awayScore`) are currently present only on opening-round matches as seeded sample values and are not yet official historical results.
+- Result fields (`homeScore`, `awayScore`) are present only where an official FIFA result page has been verified; unverified fixtures intentionally remain without scores.
 
 ## Files in This Repo
 

@@ -1,12 +1,17 @@
 {
   "status": "partial-official",
   "lastUpdated": "2026-06-19",
-  "source": "FIFA official references + structured secondary fixture tables (cross-checked) + seeded sample results",
-  "notes": "Full 48-team groups and 104-match schedule are present. Group-stage fixtures (1-72) come from structured secondary tables and were cross-checked against FIFA official references; knockout pathways and times are normalized from FIFA schedule materials. Opening-round match results (1-24) are currently seeded sample scores for standings/UI validation and will be replaced with official results.",
+  "source": "FIFA official references + structured secondary fixture tables (cross-checked) + FIFA official result pages",
+  "notes": "Full 48-team groups and 104-match schedule are present. Group-stage fixtures (1-72) come from structured secondary tables and were cross-checked against FIFA official references; knockout pathways and times are normalized from FIFA schedule materials. Official result scores are currently populated for verified completed fixtures (matches 1-12); additional results are added only after verification from FIFA official pages.",
   "references": [
     "https://www.fifa.market/en/articles/final-draw-results",
     "https://inside.fifa.com/organisation/media-releases/updated-world-cup-2026-match-schedule-venues-kick-off-times-104-matches",
     "https://digitalhub.fifa.com/asset/4b5d4417-3343-4732-9cdf-14b6662af407/FWC26-Match-Schedule_English.pdf",
-    "https://www.fifaworldcupnews.com/fifa-world-cup-2026-fixtures/"
+    "https://www.fifaworldcupnews.com/fifa-world-cup-2026-fixtures/",
+    "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums",
+    "https://www.fifa.com/fr/tournaments/mens/worldcup/canadamexicousa2026/articles/resumes-11-juin-2026",
+    "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fwc26-germany-curacao-group-e-highlights",
+    "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fwc26-netherlands-japan-group-f-highlights",
+    "https://www.fifa.com/fr/tournaments/mens/worldcup/canadamexicousa2026/articles/fwc26-sweden-tunisia-group-f-highlights"
   ]
 }
