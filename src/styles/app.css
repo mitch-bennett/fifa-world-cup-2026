@@ -54,6 +54,23 @@ p {
   margin: 1rem auto 2rem;
 }
 
+.data-status {
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--outline);
+  padding: 0.6rem 0.8rem;
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
+.data-status.sample {
+  background: rgba(245, 158, 11, 0.12);
+}
+
+.data-status.official {
+  background: rgba(34, 197, 94, 0.12);
+}
+
 .nav-shell {
   width: min(1200px, 100% - 2rem);
   margin: 1rem auto;
