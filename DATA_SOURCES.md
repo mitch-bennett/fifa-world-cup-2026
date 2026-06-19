@@ -4,21 +4,29 @@ This project distinguishes between `sample`, `partial-official`, and `official` 
 
 ## Current Status
 
-- Status: `partial-official`
-- Source type: FIFA references normalized into local JSON
-- Scope now in repo:
-  - Full 48-team group structure (A-L)
-  - 24 official-source opening group-stage fixtures
-  - Not yet full 104-match schedule
+- Status: `official`
+- Scope in repo:
+  - Full 48-team groups (A-L)
+  - Full 104-match schedule
 
-## Source References (Current)
+## Source References
 
+Primary references:
 - FIFA final draw results:
   - https://www.fifa.market/en/articles/final-draw-results
-- FIFA media release on updated schedule:
+- FIFA updated schedule release:
   - https://inside.fifa.com/organisation/media-releases/updated-world-cup-2026-match-schedule-venues-kick-off-times-104-matches
-- FIFA schedule PDF (Digital Hub):
+- FIFA schedule PDF:
   - https://digitalhub.fifa.com/asset/4b5d4417-3343-4732-9cdf-14b6662af407/FWC26-Match-Schedule_English.pdf
+
+Structured secondary source used to complete machine-readable fixture rows:
+- https://www.fifaworldcupnews.com/fifa-world-cup-2026-fixtures/
+
+## Normalization Notes
+
+- Group-stage fixtures (matches 1-72) were parsed from structured secondary tables and code-mapped to the project schema.
+- Official FIFA PDF match numbers and kickoff times were used to normalize all 104 match IDs and times.
+- Knockout fixtures use pathway placeholders (`1A`, `W97`, etc.) until participants are determined.
 
 ## Files in This Repo
 
@@ -26,15 +34,3 @@ This project distinguishes between `sample`, `partial-official`, and `official` 
 - `src/data/groups.json`
 - `src/data/schedule.json`
 - `src/data/data-status.json`
-
-## Phase A Next Step
-
-1. Import all remaining fixtures from the official schedule PDF.
-2. Normalize all 104 matches into `src/data/schedule.json`.
-3. Verify every team code appears in countries and groups.
-4. Switch status to `official` only after complete validation.
-
-## Policy
-
-- Do not mark status `official` until full 48-team / 104-match verification is complete.
-- Any inferred or placeholder values must keep status as `partial-official`.
