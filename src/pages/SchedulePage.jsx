@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react';
 import useCountries from '../hooks/useCountries';
 import useSchedule from '../hooks/useSchedule';
 import ScheduleTable from '../components/ScheduleTable';
+import MatchCard from '../components/MatchCard';
 import ScoresLinks from '../components/ScoresLinks';
 
 export default function SchedulePage() {
@@ -12,6 +13,7 @@ export default function SchedulePage() {
   const [teamFilter, setTeamFilter] = useState('ALL');
   const [dateFilter, setDateFilter] = useState('ALL');
   const [sortOrder, setSortOrder] = useState('ASC');
+  const [viewMode, setViewMode] = useState('TABLE');
 
   const groups = useMemo(
     () => ['ALL', ...Array.from(new Set(matches.map((match) => match.group))).sort()],
@@ -100,7 +102,36 @@ export default function SchedulePage() {
         </button>
       </div>
 
-      <ScheduleTable matches={filteredMatches} teamsByCode={byCode} />
+      <div className="view-toggle">
+        <button
+          type="button"
+          className={`team-pill${viewMode === 'TABLE' ? ' active' : ''}`}
+          onClick={() => setViewMode('TABLE')}
+        >
+          Table view
+        </button>
+        <button
+          type="button"
+          className={`team-pill${viewMode === 'CARDS' ? ' active' : ''}`}
+          onClick={() => setViewMode('CARDS')}
+        >
+          Card view
+        </button>
+      </div>
+
+      {viewMode === 'TABLE' ? (
+        <ScheduleTable matches={filteredMatches} teamsByCode={byCode} />
+      ) : filteredMatches.length === 0 ? (
+        <div className="card">
+          <p className="empty">No matches found for the selected filters.</p>
+        </div>
+      ) : (
+        <div className="match-grid">
+          {filteredMatches.map((match) => (
+            <MatchCard key={match.id} match={match} teamsByCode={byCode} />
+          ))}
+        </div>
+      )}
       <ScoresLinks />
     </section>
   );
