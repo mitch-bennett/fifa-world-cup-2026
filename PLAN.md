@@ -1,5 +1,7 @@
 # FIFA World Cup 2026 — Interactive Map Website Plan
 
+> Current execution snapshot: see `CURRENT_STATE.md` (updated June 19, 2026).
+
 ## 1. Overview
 
 A website featuring an interactive, visual world map of the countries participating
