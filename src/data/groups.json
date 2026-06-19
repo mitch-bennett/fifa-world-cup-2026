@@ -1,14 +1,98 @@
 [
-  { "group": "A", "teams": ["USA", "CRC"] },
-  { "group": "B", "teams": ["MEX", "NED"] },
-  { "group": "C", "teams": ["CAN", "AUS"] },
-  { "group": "D", "teams": ["BRA", "KOR"] },
-  { "group": "E", "teams": ["ARG", "COL"] },
-  { "group": "F", "teams": ["FRA", "URU"] },
-  { "group": "G", "teams": ["ENG", "BEL"] },
-  { "group": "H", "teams": ["GER", "CRO"] },
-  { "group": "I", "teams": ["ESP", "POR"] },
-  { "group": "J", "teams": ["JPN", "DEN"] },
-  { "group": "K", "teams": ["MAR", "SUI"] },
-  { "group": "L", "teams": ["SEN", "ECU"] }
+  {
+    "group": "A",
+    "teams": ["USA", "CRC"],
+    "standings": [
+      { "code": "USA", "played": 1, "wins": 1, "draws": 0, "losses": 0, "gf": 2, "ga": 0, "gd": 2, "pts": 3 },
+      { "code": "CRC", "played": 1, "wins": 0, "draws": 0, "losses": 1, "gf": 0, "ga": 2, "gd": -2, "pts": 0 }
+    ]
+  },
+  {
+    "group": "B",
+    "teams": ["MEX", "NED"],
+    "standings": [
+      { "code": "NED", "played": 1, "wins": 1, "draws": 0, "losses": 0, "gf": 3, "ga": 1, "gd": 2, "pts": 3 },
+      { "code": "MEX", "played": 1, "wins": 0, "draws": 0, "losses": 1, "gf": 1, "ga": 3, "gd": -2, "pts": 0 }
+    ]
+  },
+  {
+    "group": "C",
+    "teams": ["CAN", "AUS"],
+    "standings": [
+      { "code": "CAN", "played": 1, "wins": 0, "draws": 1, "losses": 0, "gf": 1, "ga": 1, "gd": 0, "pts": 1 },
+      { "code": "AUS", "played": 1, "wins": 0, "draws": 1, "losses": 0, "gf": 1, "ga": 1, "gd": 0, "pts": 1 }
+    ]
+  },
+  {
+    "group": "D",
+    "teams": ["BRA", "KOR"],
+    "standings": [
+      { "code": "BRA", "played": 1, "wins": 1, "draws": 0, "losses": 0, "gf": 2, "ga": 1, "gd": 1, "pts": 3 },
+      { "code": "KOR", "played": 1, "wins": 0, "draws": 0, "losses": 1, "gf": 1, "ga": 2, "gd": -1, "pts": 0 }
+    ]
+  },
+  {
+    "group": "E",
+    "teams": ["ARG", "COL"],
+    "standings": [
+      { "code": "ARG", "played": 1, "wins": 1, "draws": 0, "losses": 0, "gf": 2, "ga": 0, "gd": 2, "pts": 3 },
+      { "code": "COL", "played": 1, "wins": 0, "draws": 0, "losses": 1, "gf": 0, "ga": 2, "gd": -2, "pts": 0 }
+    ]
+  },
+  {
+    "group": "F",
+    "teams": ["FRA", "URU"],
+    "standings": [
+      { "code": "FRA", "played": 1, "wins": 0, "draws": 1, "losses": 0, "gf": 1, "ga": 1, "gd": 0, "pts": 1 },
+      { "code": "URU", "played": 1, "wins": 0, "draws": 1, "losses": 0, "gf": 1, "ga": 1, "gd": 0, "pts": 1 }
+    ]
+  },
+  {
+    "group": "G",
+    "teams": ["ENG", "BEL"],
+    "standings": [
+      { "code": "ENG", "played": 1, "wins": 1, "draws": 0, "losses": 0, "gf": 2, "ga": 1, "gd": 1, "pts": 3 },
+      { "code": "BEL", "played": 1, "wins": 0, "draws": 0, "losses": 1, "gf": 1, "ga": 2, "gd": -1, "pts": 0 }
+    ]
+  },
+  {
+    "group": "H",
+    "teams": ["GER", "CRO"],
+    "standings": [
+      { "code": "GER", "played": 1, "wins": 1, "draws": 0, "losses": 0, "gf": 3, "ga": 1, "gd": 2, "pts": 3 },
+      { "code": "CRO", "played": 1, "wins": 0, "draws": 0, "losses": 1, "gf": 1, "ga": 3, "gd": -2, "pts": 0 }
+    ]
+  },
+  {
+    "group": "I",
+    "teams": ["ESP", "POR"],
+    "standings": [
+      { "code": "ESP", "played": 1, "wins": 0, "draws": 1, "losses": 0, "gf": 2, "ga": 2, "gd": 0, "pts": 1 },
+      { "code": "POR", "played": 1, "wins": 0, "draws": 1, "losses": 0, "gf": 2, "ga": 2, "gd": 0, "pts": 1 }
+    ]
+  },
+  {
+    "group": "J",
+    "teams": ["JPN", "DEN"],
+    "standings": [
+      { "code": "JPN", "played": 1, "wins": 1, "draws": 0, "losses": 0, "gf": 1, "ga": 0, "gd": 1, "pts": 3 },
+      { "code": "DEN", "played": 1, "wins": 0, "draws": 0, "losses": 1, "gf": 0, "ga": 1, "gd": -1, "pts": 0 }
+    ]
+  },
+  {
+    "group": "K",
+    "teams": ["MAR", "SUI"],
+    "standings": [
+      { "code": "MAR", "played": 1, "wins": 0, "draws": 1, "losses": 0, "gf": 1, "ga": 1, "gd": 0, "pts": 1 },
+      { "code": "SUI", "played": 1, "wins": 0, "draws": 1, "losses": 0, "gf": 1, "ga": 1, "gd": 0, "pts": 1 }
+    ]
+  },
+  {
+    "group": "L",
+    "teams": ["SEN", "ECU"],
+    "standings": [
+      { "code": "ECU", "played": 1, "wins": 1, "draws": 0, "losses": 0, "gf": 2, "ga": 1, "gd": 1, "pts": 3 },
+      { "code": "SEN", "played": 1, "wins": 0, "draws": 0, "losses": 1, "gf": 1, "ga": 2, "gd": -1, "pts": 0 }
+    ]
+  }
 ]

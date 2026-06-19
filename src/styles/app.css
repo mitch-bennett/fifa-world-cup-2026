@@ -151,6 +151,11 @@ nav {
   align-items: center;
 }
 
+.summary-meta {
+  margin-top: 0.2rem;
+  font-size: 0.9rem;
+}
+
 .country-summary.compact {
   padding: 0.85rem;
 }
@@ -211,6 +216,20 @@ nav {
 
 .group-card h3 {
   margin-bottom: 0.8rem;
+}
+
+.standings-wrap {
+  overflow-x: auto;
+  margin-bottom: 0.85rem;
+}
+
+.standings-table {
+  min-width: 620px;
+}
+
+.standings-table th,
+.standings-table td {
+  white-space: nowrap;
 }
 
 .team-selector {

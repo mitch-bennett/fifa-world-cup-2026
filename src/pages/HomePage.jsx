@@ -1,15 +1,25 @@
 import { Suspense, lazy, useMemo, useState } from 'react';
 import CountrySummary from '../components/CountrySummary';
 import useCountries from '../hooks/useCountries';
+import useSchedule from '../hooks/useSchedule';
+import { formatMatchPreview, getNextMatch } from '../utils/matches';
 
 const GlobeView = lazy(() => import('../components/GlobeView'));
 
 export default function HomePage() {
   const { countries, byCode } = useCountries();
+  const { byTeam } = useSchedule();
   const [selectedCode, setSelectedCode] = useState(countries[0]?.code || null);
   const [isSpinning, setIsSpinning] = useState(false);
 
   const selectedCountry = useMemo(() => byCode[selectedCode], [byCode, selectedCode]);
+  const nextMatchLabel = useMemo(() => {
+    if (!selectedCountry) {
+      return null;
+    }
+    const nextMatch = getNextMatch(byTeam[selectedCountry.code], selectedCountry.code);
+    return formatMatchPreview(nextMatch, selectedCountry.code, byCode);
+  }, [byCode, byTeam, selectedCountry]);
 
   return (
     <section className="stack-lg">
@@ -37,7 +47,7 @@ export default function HomePage() {
       <aside className="card home-preview">
         <h2>Country Preview</h2>
         {selectedCountry ? (
-          <CountrySummary country={selectedCountry} />
+          <CountrySummary country={selectedCountry} nextMatchLabel={nextMatchLabel} />
         ) : (
           <p className="empty">Select a country marker to preview team details.</p>
         )}
