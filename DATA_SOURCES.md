@@ -5,17 +5,20 @@ This project distinguishes between `sample`, `partial-official`, and `official` 
 ## Current Status
 
 - Status: `partial-official`
-- Source type: official FIFA references, normalized into a subset JSON dataset
-- Scope: 2 teams per group + 1 representative fixture per group
+- Source type: FIFA references normalized into local JSON
+- Scope now in repo:
+  - Full 48-team group structure (A-L)
+  - 24 official-source opening group-stage fixtures
+  - Not yet full 104-match schedule
 
 ## Source References (Current)
 
-- FIFA final draw results (group assignments):
+- FIFA final draw results:
   - https://www.fifa.market/en/articles/final-draw-results
-- FIFA media release (updated 104-match schedule context):
-  - https://tickets.fifa.com/media-releases/updated-world-cup-2026-match-schedule-venues-kick-off-times-104-matches
-- FIFA match schedule article mirror used for match-number/date/venue lookup:
-  - https://fifa-com.app/en/articles/View-the-FIFA-World-Cup-26%E2%84%A2-match-schedule
+- FIFA media release on updated schedule:
+  - https://inside.fifa.com/organisation/media-releases/updated-world-cup-2026-match-schedule-venues-kick-off-times-104-matches
+- FIFA schedule PDF (Digital Hub):
+  - https://digitalhub.fifa.com/asset/4b5d4417-3343-4732-9cdf-14b6662af407/FWC26-Match-Schedule_English.pdf
 
 ## Files in This Repo
 
@@ -24,16 +27,14 @@ This project distinguishes between `sample`, `partial-official`, and `official` 
 - `src/data/schedule.json`
 - `src/data/data-status.json`
 
-## Phase A Workflow
+## Phase A Next Step
 
-1. Use authoritative references for group and fixture records.
-2. Normalize into project JSON schemas.
-3. Record references + verification date in `src/data/data-status.json`.
-4. Upgrade status:
-   - `sample` -> `partial-official` for verified subsets
-   - `partial-official` -> `official` only when full 48-team / 104-match data is verified
+1. Import all remaining fixtures from the official schedule PDF.
+2. Normalize all 104 matches into `src/data/schedule.json`.
+3. Verify every team code appears in countries and groups.
+4. Switch status to `official` only after complete validation.
 
 ## Policy
 
-- Do not mark status `official` until full dataset verification is complete.
-- If any record is inferred or incomplete, keep status at `sample` or `partial-official`.
+- Do not mark status `official` until full 48-team / 104-match verification is complete.
+- Any inferred or placeholder values must keep status as `partial-official`.

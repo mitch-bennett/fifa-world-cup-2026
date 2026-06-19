@@ -68,11 +68,11 @@ export default function CountryProfilePage() {
           <h3>Team Snapshot</h3>
           <ul className="facts-list">
             <li>Head coach: {country.team.coach}</li>
-            <li>Appearances: {country.team.appearances}</li>
+            <li>Appearances: {country.team.appearances ?? 'TBD'}</li>
             <li>Best finish: {country.team.bestFinish}</li>
             <li>Qualification: {country.team.qualificationNote}</li>
             <li>Base camp: {country.team.baseCamp || 'TBD'}</li>
-            <li>Key players: {country.team.keyPlayers.join(', ')}</li>
+            <li>Key players: {country.team.keyPlayers?.length ? country.team.keyPlayers.join(', ') : 'TBD'}</li>
           </ul>
         </article>
       </div>

@@ -1,11 +1,11 @@
 {
   "status": "partial-official",
   "lastUpdated": "2026-06-19",
-  "source": "FIFA official final draw article + FIFA official match schedule references",
-  "notes": "Current dataset is an official-source subset (2 teams per group and 1 representative fixture per group). It is not the full 48-team, 104-match tournament dataset.",
+  "source": "FIFA final draw and official match schedule release",
+  "notes": "Groups now reflect the full 48-team final draw structure. Schedule currently contains an official-source subset (24 opening group-stage fixtures), not the full 104 matches.",
   "references": [
     "https://www.fifa.market/en/articles/final-draw-results",
-    "https://tickets.fifa.com/media-releases/updated-world-cup-2026-match-schedule-venues-kick-off-times-104-matches",
-    "https://fifa-com.app/en/articles/View-the-FIFA-World-Cup-26%E2%84%A2-match-schedule"
+    "https://inside.fifa.com/organisation/media-releases/updated-world-cup-2026-match-schedule-venues-kick-off-times-104-matches",
+    "https://digitalhub.fifa.com/asset/4b5d4417-3343-4732-9cdf-14b6662af407/FWC26-Match-Schedule_English.pdf"
   ]
 }

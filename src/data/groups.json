@@ -1,14 +1,110 @@
 [
-  { "group": "A", "teams": ["MEX", "KOR"] },
-  { "group": "B", "teams": ["CAN", "SUI"] },
-  { "group": "C", "teams": ["BRA", "MAR"] },
-  { "group": "D", "teams": ["USA", "AUS"] },
-  { "group": "E", "teams": ["GER", "ECU"] },
-  { "group": "F", "teams": ["NED", "JPN"] },
-  { "group": "G", "teams": ["BEL", "NZL"] },
-  { "group": "H", "teams": ["ESP", "URU"] },
-  { "group": "I", "teams": ["FRA", "SEN"] },
-  { "group": "J", "teams": ["ARG", "AUT"] },
-  { "group": "K", "teams": ["POR", "COL"] },
-  { "group": "L", "teams": ["ENG", "CRO"] }
+  {
+    "group": "A",
+    "teams": [
+      "MEX",
+      "RSA",
+      "CZE",
+      "KOR"
+    ]
+  },
+  {
+    "group": "B",
+    "teams": [
+      "CAN",
+      "BIH",
+      "SUI",
+      "QAT"
+    ]
+  },
+  {
+    "group": "C",
+    "teams": [
+      "BRA",
+      "HAI",
+      "SCO",
+      "MAR"
+    ]
+  },
+  {
+    "group": "D",
+    "teams": [
+      "USA",
+      "PAR",
+      "AUS",
+      "TUR"
+    ]
+  },
+  {
+    "group": "E",
+    "teams": [
+      "GER",
+      "CUW",
+      "CIV",
+      "ECU"
+    ]
+  },
+  {
+    "group": "F",
+    "teams": [
+      "NED",
+      "SWE",
+      "TUN",
+      "JPN"
+    ]
+  },
+  {
+    "group": "G",
+    "teams": [
+      "BEL",
+      "IRN",
+      "NZL",
+      "EGY"
+    ]
+  },
+  {
+    "group": "H",
+    "teams": [
+      "ESP",
+      "KSA",
+      "URU",
+      "CPV"
+    ]
+  },
+  {
+    "group": "I",
+    "teams": [
+      "FRA",
+      "SEN",
+      "NOR",
+      "IRQ"
+    ]
+  },
+  {
+    "group": "J",
+    "teams": [
+      "ARG",
+      "ALG",
+      "AUT",
+      "JOR"
+    ]
+  },
+  {
+    "group": "K",
+    "teams": [
+      "POR",
+      "COD",
+      "UZB",
+      "COL"
+    ]
+  },
+  {
+    "group": "L",
+    "teams": [
+      "ENG",
+      "CRO",
+      "GHA",
+      "PAN"
+    ]
+  }
 ]

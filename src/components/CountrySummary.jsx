@@ -11,7 +11,9 @@ export default function CountrySummary({ country, compact = false, nextMatchLabe
         <p className="flag">{country.flag}</p>
         <div>
           <h3>{country.name}</h3>
-          <p>Group {country.team.group} • FIFA rank {country.team.fifaRank}</p>
+          <p>
+            Group {country.team.group} • FIFA rank {country.team.fifaRank ?? 'TBD'}
+          </p>
           {nextMatchLabel && <p className="summary-meta">{nextMatchLabel}</p>}
         </div>
       </div>
