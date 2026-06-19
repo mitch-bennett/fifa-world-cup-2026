@@ -52,6 +52,11 @@ export default function GroupCard({ group, teams, standings, selectedCode, onSel
               </table>
             </div>
           )}
+          {(!standings || standings.length === 0) && (
+            <p className="empty">
+              Group standings are hidden until official results are available.
+            </p>
+          )}
           <div className="team-selector">
             {teams.map((country) => (
               <button

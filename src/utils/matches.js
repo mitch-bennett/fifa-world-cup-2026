@@ -3,13 +3,17 @@ export function getNextMatch(matches, teamCode) {
     return null;
   }
 
+  const now = new Date();
   const sorted = [...matches].sort((left, right) => new Date(left.date) - new Date(right.date));
-  return sorted.find((match) => match.home === teamCode || match.away === teamCode) || null;
+  const teamMatches = sorted.filter((match) => match.home === teamCode || match.away === teamCode);
+
+  // Prefer the next upcoming fixture relative to current date.
+  return teamMatches.find((match) => new Date(match.date) >= now) || null;
 }
 
 export function formatMatchPreview(match, teamCode, byCode) {
   if (!match) {
-    return 'Next match: TBA';
+    return 'Next: no upcoming fixture in current schedule';
   }
 
   const opponentCode = match.home === teamCode ? match.away : match.home;
