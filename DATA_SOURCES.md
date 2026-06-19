@@ -4,10 +4,11 @@ This project distinguishes between `sample`, `partial-official`, and `official` 
 
 ## Current Status
 
-- Status: `official`
+- Status: `partial-official`
 - Scope in repo:
   - Full 48-team groups (A-L)
   - Full 104-match schedule
+  - Seeded sample results for matches 1-24 (opening round) to enable standings/UI validation
 
 ## Source References
 
@@ -27,6 +28,7 @@ Structured secondary source used to complete machine-readable fixture rows:
 - Group-stage fixtures (matches 1-72) were parsed from structured secondary tables and code-mapped to the project schema.
 - Official FIFA PDF match numbers and kickoff times were used to normalize all 104 match IDs and times.
 - Knockout fixtures use pathway placeholders (`1A`, `W97`, etc.) until participants are determined.
+- Result fields (`homeScore`, `awayScore`) are currently present only on opening-round matches as seeded sample values and are not yet official historical results.
 
 ## Files in This Repo
 

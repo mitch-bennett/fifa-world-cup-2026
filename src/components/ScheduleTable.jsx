@@ -5,6 +5,18 @@ function formatDate(value) {
   });
 }
 
+function formatMatchLabel(match, teamsByCode) {
+  const homeName = teamsByCode[match.home]?.name || match.home;
+  const awayName = teamsByCode[match.away]?.name || match.away;
+  const hasScore = Number.isFinite(match.homeScore) && Number.isFinite(match.awayScore);
+
+  if (!hasScore) {
+    return `${homeName} vs ${awayName}`;
+  }
+
+  return `${homeName} ${match.homeScore}-${match.awayScore} ${awayName}`;
+}
+
 export default function ScheduleTable({ matches, teamsByCode }) {
   if (!matches.length) {
     return (
@@ -32,9 +44,7 @@ export default function ScheduleTable({ matches, teamsByCode }) {
             <tr key={match.id}>
               <td>{formatDate(match.date)}</td>
               <td>{match.group}</td>
-              <td>
-                {teamsByCode[match.home]?.name || match.home} vs {teamsByCode[match.away]?.name || match.away}
-              </td>
+              <td>{formatMatchLabel(match, teamsByCode)}</td>
               <td>
                 {match.venue}, {match.city}
               </td>

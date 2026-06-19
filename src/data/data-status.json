@@ -1,8 +1,8 @@
 {
-  "status": "official",
+  "status": "partial-official",
   "lastUpdated": "2026-06-19",
-  "source": "FIFA official references + structured secondary fixture tables (cross-checked)",
-  "notes": "Full 48-team groups and 104-match schedule are present. Group-stage fixtures (1-72) come from structured secondary tables and were cross-checked against FIFA official references; knockout pathways and times are normalized from FIFA schedule materials.",
+  "source": "FIFA official references + structured secondary fixture tables (cross-checked) + seeded sample results",
+  "notes": "Full 48-team groups and 104-match schedule are present. Group-stage fixtures (1-72) come from structured secondary tables and were cross-checked against FIFA official references; knockout pathways and times are normalized from FIFA schedule materials. Opening-round match results (1-24) are currently seeded sample scores for standings/UI validation and will be replaced with official results.",
   "references": [
     "https://www.fifa.market/en/articles/final-draw-results",
     "https://inside.fifa.com/organisation/media-releases/updated-world-cup-2026-match-schedule-venues-kick-off-times-104-matches",

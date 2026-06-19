@@ -98,9 +98,12 @@ export default function CountryProfilePage() {
             {fixtures.map((match) => {
               const opponentCode = match.home === country.code ? match.away : match.home;
               const opponent = byCode[opponentCode];
+              const hasScore = Number.isFinite(match.homeScore) && Number.isFinite(match.awayScore);
+              const scoreLine = hasScore ? ` • Result: ${match.homeScore}-${match.awayScore}` : '';
               return (
                 <li key={match.id}>
-                  {formatDate(match.date)} • vs {opponent?.name || opponentCode} • {match.venue}, {match.city}
+                  {formatDate(match.date)} • vs {opponent?.name || opponentCode}
+                  {scoreLine} • {match.venue}, {match.city}
                 </li>
               );
             })}
