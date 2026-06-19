@@ -200,10 +200,30 @@ nav {
   margin-bottom: 0.8rem;
 }
 
-.group-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 0.7rem;
+.team-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.85rem;
+}
+
+.team-pill {
+  border: 1px solid var(--outline);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--ink);
+  padding: 0.4rem 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.team-pill:hover {
+  border-color: var(--accent);
+}
+
+.team-pill.active {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .filters {

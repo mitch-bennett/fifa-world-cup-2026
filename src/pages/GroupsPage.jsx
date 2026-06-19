@@ -1,19 +1,49 @@
+import { useMemo, useState } from 'react';
 import groups from '../data/groups.json';
 import GroupCard from '../components/GroupCard';
 import useCountries from '../hooks/useCountries';
 
 export default function GroupsPage() {
   const { byCode } = useCountries();
+  const seededGroups = useMemo(
+    () =>
+      groups.map((entry) => ({
+        group: entry.group,
+        teams: entry.teams.map((code) => byCode[code]).filter(Boolean),
+      })),
+    [byCode],
+  );
+
+  const [selectedByGroup, setSelectedByGroup] = useState(() => {
+    return seededGroups.reduce((acc, entry) => {
+      acc[entry.group] = entry.teams[0]?.code || null;
+      return acc;
+    }, {});
+  });
+
+  function handleSelect(group, code) {
+    setSelectedByGroup((current) => ({
+      ...current,
+      [group]: code,
+    }));
+  }
 
   return (
     <section className="stack-lg">
       <header>
         <h2>Groups A-L</h2>
-        <p>Initial data seed includes one team per group for structure-first delivery.</p>
+        <p>Select a country in any group to preview the shared team summary card.</p>
       </header>
-      {groups.map((entry) => {
-        const teams = entry.teams.map((code) => byCode[code]).filter(Boolean);
-        return <GroupCard key={entry.group} group={entry.group} teams={teams} />;
+      {seededGroups.map((entry) => {
+        return (
+          <GroupCard
+            key={entry.group}
+            group={entry.group}
+            teams={entry.teams}
+            selectedCode={selectedByGroup[entry.group]}
+            onSelect={(code) => handleSelect(entry.group, code)}
+          />
+        );
       })}
     </section>
   );
