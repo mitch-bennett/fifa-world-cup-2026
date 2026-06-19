@@ -27,13 +27,13 @@ This file tracks implementation status against `PLAN.md`.
 
 - Group/team structure: full 48-team, 12-group draw is present.
 - Schedule structure: full 104-match schedule is present.
-- Results coverage: partial official results populated (verified through match `m-012`).
+- Results coverage: partial official results populated (verified through match `m-028` — all matchday-1 fixtures plus the June 18 Group A/B matchday-2 fixtures).
 - Unverified matches intentionally have no `homeScore` / `awayScore`.
 - Status flag in app data: `partial-official`.
 
 ## Remaining Work To Reach Current Target
 
-1. Continue official result ingestion for completed fixtures after `m-012`.
+1. Continue official result ingestion for completed fixtures after `m-028` (June 19 onward, once matches finish and are verified).
 2. Verify each score against FIFA official pages before adding it.
 3. Keep `DATA_SOURCES.md` and `src/data/data-status.json` aligned with current coverage.
 4. Run post-update smoke checks (`groups`, `schedule`, country fixture display).

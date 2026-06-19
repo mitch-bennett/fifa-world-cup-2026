@@ -138,7 +138,9 @@
     "home": "KSA",
     "away": "URU",
     "venue": "Hard Rock Stadium",
-    "city": "Miami"
+    "city": "Miami",
+    "homeScore": 1,
+    "awayScore": 1
   },
   {
     "id": "m-014",
@@ -147,7 +149,9 @@
     "home": "ESP",
     "away": "CPV",
     "venue": "Mercedes-Benz Stadium",
-    "city": "Atlanta"
+    "city": "Atlanta",
+    "homeScore": 0,
+    "awayScore": 0
   },
   {
     "id": "m-015",
@@ -156,7 +160,9 @@
     "home": "IRN",
     "away": "NZL",
     "venue": "SoFi Stadium",
-    "city": "Los Angeles"
+    "city": "Los Angeles",
+    "homeScore": 2,
+    "awayScore": 2
   },
   {
     "id": "m-016",
@@ -165,7 +171,9 @@
     "home": "BEL",
     "away": "EGY",
     "venue": "Lumen Field",
-    "city": "Seattle"
+    "city": "Seattle",
+    "homeScore": 1,
+    "awayScore": 1
   },
   {
     "id": "m-017",
@@ -174,7 +182,9 @@
     "home": "FRA",
     "away": "SEN",
     "venue": "MetLife Stadium",
-    "city": "New York/New Jersey"
+    "city": "New York/New Jersey",
+    "homeScore": 3,
+    "awayScore": 1
   },
   {
     "id": "m-018",
@@ -183,7 +193,9 @@
     "home": "IRQ",
     "away": "NOR",
     "venue": "Gillette Stadium",
-    "city": "Boston"
+    "city": "Boston",
+    "homeScore": 1,
+    "awayScore": 4
   },
   {
     "id": "m-019",
@@ -192,7 +204,9 @@
     "home": "ARG",
     "away": "ALG",
     "venue": "Arrowhead Stadium",
-    "city": "Kansas City"
+    "city": "Kansas City",
+    "homeScore": 3,
+    "awayScore": 0
   },
   {
     "id": "m-020",
@@ -201,7 +215,9 @@
     "home": "AUT",
     "away": "JOR",
     "venue": "Levi’s Stadium",
-    "city": "San Francisco Bay Area"
+    "city": "San Francisco Bay Area",
+    "homeScore": 3,
+    "awayScore": 1
   },
   {
     "id": "m-021",
@@ -210,7 +226,9 @@
     "home": "GHA",
     "away": "PAN",
     "venue": "BMO Field",
-    "city": "Toronto"
+    "city": "Toronto",
+    "homeScore": 1,
+    "awayScore": 0
   },
   {
     "id": "m-022",
@@ -219,7 +237,9 @@
     "home": "ENG",
     "away": "CRO",
     "venue": "AT&T Stadium",
-    "city": "Dallas"
+    "city": "Dallas",
+    "homeScore": 4,
+    "awayScore": 2
   },
   {
     "id": "m-023",
@@ -228,7 +248,9 @@
     "home": "POR",
     "away": "COD",
     "venue": "NRG Stadium",
-    "city": "Houston"
+    "city": "Houston",
+    "homeScore": 1,
+    "awayScore": 1
   },
   {
     "id": "m-024",
@@ -237,7 +259,9 @@
     "home": "UZB",
     "away": "COL",
     "venue": "Estadio Azteca",
-    "city": "Mexico City"
+    "city": "Mexico City",
+    "homeScore": 1,
+    "awayScore": 3
   },
   {
     "id": "m-025",
@@ -246,7 +270,9 @@
     "home": "CZE",
     "away": "RSA",
     "venue": "Mercedes-Benz Stadium",
-    "city": "Atlanta"
+    "city": "Atlanta",
+    "homeScore": 1,
+    "awayScore": 1
   },
   {
     "id": "m-026",
@@ -255,7 +281,9 @@
     "home": "SUI",
     "away": "BIH",
     "venue": "SoFi Stadium",
-    "city": "Los Angeles"
+    "city": "Los Angeles",
+    "homeScore": 4,
+    "awayScore": 1
   },
   {
     "id": "m-027",
@@ -264,7 +292,9 @@
     "home": "CAN",
     "away": "QAT",
     "venue": "BC Place",
-    "city": "Vancouver"
+    "city": "Vancouver",
+    "homeScore": 6,
+    "awayScore": 0
   },
   {
     "id": "m-028",
@@ -273,7 +303,9 @@
     "home": "MEX",
     "away": "KOR",
     "venue": "Estadio Guadalajara",
-    "city": "TBD"
+    "city": "TBD",
+    "homeScore": 1,
+    "awayScore": 0
   },
   {
     "id": "m-029",

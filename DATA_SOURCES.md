@@ -8,7 +8,7 @@ This project distinguishes between `sample`, `partial-official`, and `official` 
 - Scope in repo:
   - Full 48-team groups (A-L)
   - Full 104-match schedule
-  - Official verified results for completed fixtures currently populated through match 12
+  - Official verified results for completed fixtures currently populated through match 28 (all matchday-1 fixtures plus the June 18 Group A/B matchday-2 fixtures)
 
 ## Source References
 
@@ -29,6 +29,16 @@ Official result verification pages:
 - https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fwc26-germany-curacao-group-e-highlights
 - https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fwc26-netherlands-japan-group-f-highlights
 - https://www.fifa.com/fr/tournaments/mens/worldcup/canadamexicousa2026/articles/fwc26-sweden-tunisia-group-f-highlights
+
+Per-group result pages used to verify matches 13-28 (June 15-18 fixtures):
+- https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_A (m-025, m-028)
+- https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_B (m-026, m-027)
+- https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_G (m-015, m-016)
+- https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_H (m-013, m-014)
+- https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_I (m-017, m-018)
+- https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_J (m-019, m-020)
+- https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_K (m-023, m-024)
+- https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_L (m-021, m-022)
 
 ## Normalization Notes
 

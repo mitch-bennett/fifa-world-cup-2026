@@ -2,7 +2,7 @@
   "status": "partial-official",
   "lastUpdated": "2026-06-19",
   "source": "FIFA official references + structured secondary fixture tables (cross-checked) + FIFA official result pages",
-  "notes": "Full 48-team groups and 104-match schedule are present. Group-stage fixtures (1-72) come from structured secondary tables and were cross-checked against FIFA official references; knockout pathways and times are normalized from FIFA schedule materials. Official result scores are currently populated for verified completed fixtures (matches 1-12); additional results are added only after verification from FIFA official pages.",
+  "notes": "Full 48-team groups and 104-match schedule are present. Group-stage fixtures (1-72) come from structured secondary tables and were cross-checked against FIFA official references; knockout pathways and times are normalized from FIFA schedule materials. Official result scores are currently populated for verified completed fixtures (matches 1-28, covering all matchday-1 fixtures plus the June 18 matchday-2 Group A/B fixtures); additional results are added only after verification from official sources. Matches on June 19 onward (m-029+) remain unscored until completed and verified.",
   "references": [
     "https://www.fifa.market/en/articles/final-draw-results",
     "https://inside.fifa.com/organisation/media-releases/updated-world-cup-2026-match-schedule-venues-kick-off-times-104-matches",
@@ -12,6 +12,14 @@
     "https://www.fifa.com/fr/tournaments/mens/worldcup/canadamexicousa2026/articles/resumes-11-juin-2026",
     "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fwc26-germany-curacao-group-e-highlights",
     "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fwc26-netherlands-japan-group-f-highlights",
-    "https://www.fifa.com/fr/tournaments/mens/worldcup/canadamexicousa2026/articles/fwc26-sweden-tunisia-group-f-highlights"
+    "https://www.fifa.com/fr/tournaments/mens/worldcup/canadamexicousa2026/articles/fwc26-sweden-tunisia-group-f-highlights",
+    "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_A",
+    "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_B",
+    "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_G",
+    "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_H",
+    "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_I",
+    "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_J",
+    "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_K",
+    "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_L"
   ]
 }
