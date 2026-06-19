@@ -1,5 +1,6 @@
 import { Suspense, lazy, useMemo, useState } from 'react';
 import CountrySummary from '../components/CountrySummary';
+import LoadingState from '../components/LoadingState';
 import useCountries from '../hooks/useCountries';
 import useSchedule from '../hooks/useSchedule';
 import { formatMatchPreview, getNextMatch } from '../utils/matches';
@@ -35,7 +36,7 @@ export default function HomePage() {
           </button>
         </div>
         <p>Click a highlighted country to open a preview before navigating to the full profile.</p>
-        <Suspense fallback={<p className="empty">Loading globe...</p>}>
+        <Suspense fallback={<LoadingState label="Loading globe..." />}>
           <GlobeView
             countries={countries}
             selectedCode={selectedCode}

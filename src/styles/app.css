@@ -112,6 +112,13 @@ nav {
   box-shadow: var(--shadow);
 }
 
+.loading-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+}
+
 .hero-grid {
   display: grid;
   grid-template-columns: 1.6fr 1fr;

@@ -1,5 +1,6 @@
 import { Suspense, lazy, useMemo } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import LoadingState from '../components/LoadingState';
 import ScoresLinks from '../components/ScoresLinks';
 import useCountries from '../hooks/useCountries';
 import useSchedule from '../hooks/useSchedule';
@@ -77,10 +78,10 @@ export default function CountryProfilePage() {
       </div>
 
       <div className="profile-grid">
-        <Suspense fallback={<p className="empty">Loading mini globe...</p>}>
+        <Suspense fallback={<LoadingState label="Loading mini globe..." />}>
           <MiniGlobe country={country} />
         </Suspense>
-        <Suspense fallback={<p className="empty">Loading map...</p>}>
+        <Suspense fallback={<LoadingState label="Loading map..." />}>
           <CountryMap2D country={country} />
         </Suspense>
       </div>
