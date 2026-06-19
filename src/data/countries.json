@@ -1,52 +1,502 @@
 [
   {
-    "code": "USA",
-    "name": "United States",
-    "flag": "🇺🇸",
-    "capital": "Washington, D.C.",
-    "capitalLat": 38.9072,
-    "capitalLng": -77.0369,
-    "population": 334900000,
-    "region": "North America",
-    "languages": ["English"],
-    "blurb": "Co-host nation with deep talent depth and major-host momentum.",
-    "lat": 39.8283,
-    "lng": -98.5795,
+    "code": "ARG",
+    "name": "Argentina",
+    "flag": "🇦🇷",
+    "capital": "Buenos Aires",
+    "capitalLat": -34.6037,
+    "capitalLng": -58.3816,
+    "population": 46040000,
+    "region": "South America",
+    "languages": [
+      "Spanish"
+    ],
+    "blurb": "Current world champions with elite positional control.",
+    "lat": -38.4161,
+    "lng": -63.6167,
     "team": {
-      "fifaRank": 11,
-      "confederation": "CONCACAF",
-      "group": "A",
-      "coach": "Mauricio Pochettino",
-      "keyPlayers": ["Christian Pulisic", "Weston McKennie", "Antonee Robinson"],
-      "qualificationNote": "Qualified as host nation.",
-      "appearances": 12,
-      "bestFinish": "Third place (1930)",
-      "baseCamp": "Dallas, United States"
+      "fifaRank": 1,
+      "confederation": "CONMEBOL",
+      "group": "J",
+      "coach": "Lionel Scaloni",
+      "keyPlayers": [
+        "Lionel Messi",
+        "Julian Alvarez",
+        "Enzo Fernandez"
+      ],
+      "qualificationNote": "Strong position in South American qualifiers.",
+      "appearances": 18,
+      "bestFinish": "Winners (1978, 1986, 2022)",
+      "baseCamp": "Atlanta, United States"
     }
   },
   {
-    "code": "CRC",
-    "name": "Costa Rica",
-    "flag": "🇨🇷",
-    "capital": "San Jose",
-    "capitalLat": 9.9281,
-    "capitalLng": -84.0907,
-    "population": 5200000,
-    "region": "North America",
-    "languages": ["Spanish"],
-    "blurb": "Disciplined side known for compact shape and tournament resilience.",
-    "lat": 9.7489,
-    "lng": -83.7534,
+    "code": "AUS",
+    "name": "Australia",
+    "flag": "🇦🇺",
+    "capital": "Canberra",
+    "capitalLat": -35.2809,
+    "capitalLng": 149.13,
+    "population": 26800000,
+    "region": "Oceania",
+    "languages": [
+      "English"
+    ],
+    "blurb": "Physical, organized side with quick transitions and set-piece threat.",
+    "lat": -25.2744,
+    "lng": 133.7751,
     "team": {
-      "fifaRank": 52,
-      "confederation": "CONCACAF",
-      "group": "A",
-      "coach": "Gustavo Alfaro",
-      "keyPlayers": ["Keylor Navas", "Manfred Ugalde", "Francisco Calvo"],
-      "qualificationNote": "Competing for one of CONCACAF's expanded slots.",
+      "fifaRank": 24,
+      "confederation": "AFC",
+      "group": "D",
+      "coach": "Graham Arnold",
+      "keyPlayers": [
+        "Mathew Ryan",
+        "Jackson Irvine",
+        "Awer Mabil"
+      ],
+      "qualificationNote": "Expected to challenge through AFC qualification.",
       "appearances": 7,
+      "bestFinish": "Round of 16 (2006, 2022)",
+      "baseCamp": "Edmonton, Canada"
+    }
+  },
+  {
+    "code": "AUT",
+    "name": "Austria",
+    "flag": "🇦🇹",
+    "capital": "Vienna",
+    "capitalLat": 48.2082,
+    "capitalLng": 16.3738,
+    "population": 9200000,
+    "region": "Europe",
+    "languages": [
+      "German"
+    ],
+    "blurb": "Structured side with compact defending and strong midfield shape.",
+    "lat": 47.5162,
+    "lng": 14.5501,
+    "team": {
+      "fifaRank": 26,
+      "confederation": "UEFA",
+      "group": "J",
+      "coach": "Ralf Rangnick",
+      "keyPlayers": [
+        "David Alaba",
+        "Marcel Sabitzer",
+        "Christoph Baumgartner"
+      ],
+      "qualificationNote": "Qualified through UEFA pathway.",
+      "appearances": 8,
+      "bestFinish": "Third place (1954)",
+      "baseCamp": "San Antonio, United States"
+    }
+  },
+  {
+    "code": "BEL",
+    "name": "Belgium",
+    "flag": "🇧🇪",
+    "capital": "Brussels",
+    "capitalLat": 50.8503,
+    "capitalLng": 4.3517,
+    "population": 11700000,
+    "region": "Europe",
+    "languages": [
+      "Dutch",
+      "French",
+      "German"
+    ],
+    "blurb": "Experienced core with tactical flexibility and strong midfield control.",
+    "lat": 50.5039,
+    "lng": 4.4699,
+    "team": {
+      "fifaRank": 9,
+      "confederation": "UEFA",
+      "group": "G",
+      "coach": "Domenico Tedesco",
+      "keyPlayers": [
+        "Kevin De Bruyne",
+        "Jeremy Doku",
+        "Romelu Lukaku"
+      ],
+      "qualificationNote": "Expected UEFA qualifier.",
+      "appearances": 14,
+      "bestFinish": "Third place (2018)",
+      "baseCamp": "New York, United States"
+    }
+  },
+  {
+    "code": "BRA",
+    "name": "Brazil",
+    "flag": "🇧🇷",
+    "capital": "Brasilia",
+    "capitalLat": -15.7939,
+    "capitalLng": -47.8828,
+    "population": 214300000,
+    "region": "South America",
+    "languages": [
+      "Portuguese"
+    ],
+    "blurb": "Five-time champions with technical quality at every line.",
+    "lat": -14.235,
+    "lng": -51.9253,
+    "team": {
+      "fifaRank": 5,
+      "confederation": "CONMEBOL",
+      "group": "C",
+      "coach": "Dorival Junior",
+      "keyPlayers": [
+        "Vinicius Junior",
+        "Rodrygo",
+        "Bruno Guimaraes"
+      ],
+      "qualificationNote": "Expected to qualify through CONMEBOL campaign.",
+      "appearances": 22,
+      "bestFinish": "Winners (x5)",
+      "baseCamp": "Miami, United States"
+    }
+  },
+  {
+    "code": "CAN",
+    "name": "Canada",
+    "flag": "🇨🇦",
+    "capital": "Ottawa",
+    "capitalLat": 45.4215,
+    "capitalLng": -75.6972,
+    "population": 40400000,
+    "region": "North America",
+    "languages": [
+      "English",
+      "French"
+    ],
+    "blurb": "Co-host with a rapid transition attack and rising young core.",
+    "lat": 56.1304,
+    "lng": -106.3468,
+    "team": {
+      "fifaRank": 49,
+      "confederation": "CONCACAF",
+      "group": "B",
+      "coach": "Jesse Marsch",
+      "keyPlayers": [
+        "Alphonso Davies",
+        "Jonathan David",
+        "Tajon Buchanan"
+      ],
+      "qualificationNote": "Qualified as host nation.",
+      "appearances": 3,
+      "bestFinish": "Group stage",
+      "baseCamp": "Vancouver, Canada"
+    }
+  },
+  {
+    "code": "COL",
+    "name": "Colombia",
+    "flag": "🇨🇴",
+    "capital": "Bogota",
+    "capitalLat": 4.711,
+    "capitalLng": -74.0721,
+    "population": 52200000,
+    "region": "South America",
+    "languages": [
+      "Spanish"
+    ],
+    "blurb": "Counter-attacking side with high-end wing play and defensive steel.",
+    "lat": 4.5709,
+    "lng": -74.2973,
+    "team": {
+      "fifaRank": 15,
+      "confederation": "CONMEBOL",
+      "group": "K",
+      "coach": "Nestor Lorenzo",
+      "keyPlayers": [
+        "Luis Diaz",
+        "James Rodriguez",
+        "Jefferson Lerma"
+      ],
+      "qualificationNote": "In contention through CONMEBOL qualifiers.",
+      "appearances": 6,
       "bestFinish": "Quarterfinals (2014)",
-      "baseCamp": "Houston, United States"
+      "baseCamp": "Philadelphia, United States"
+    }
+  },
+  {
+    "code": "CRO",
+    "name": "Croatia",
+    "flag": "🇭🇷",
+    "capital": "Zagreb",
+    "capitalLat": 45.815,
+    "capitalLng": 15.9819,
+    "population": 3900000,
+    "region": "Europe",
+    "languages": [
+      "Croatian"
+    ],
+    "blurb": "Midfield-driven side with strong tournament composure.",
+    "lat": 45.1,
+    "lng": 15.2,
+    "team": {
+      "fifaRank": 12,
+      "confederation": "UEFA",
+      "group": "L",
+      "coach": "Zlatko Dalic",
+      "keyPlayers": [
+        "Luka Modric",
+        "Josko Gvardiol",
+        "Mateo Kovacic"
+      ],
+      "qualificationNote": "Expected to stay competitive in UEFA qualifying.",
+      "appearances": 7,
+      "bestFinish": "Runners-up (2018)",
+      "baseCamp": "Portland, United States"
+    }
+  },
+  {
+    "code": "ECU",
+    "name": "Ecuador",
+    "flag": "🇪🇨",
+    "capital": "Quito",
+    "capitalLat": -0.1807,
+    "capitalLng": -78.4678,
+    "population": 18300000,
+    "region": "South America",
+    "languages": [
+      "Spanish"
+    ],
+    "blurb": "Young athletic side with quick ball progression and pressure resistance.",
+    "lat": -1.8312,
+    "lng": -78.1834,
+    "team": {
+      "fifaRank": 31,
+      "confederation": "CONMEBOL",
+      "group": "E",
+      "coach": "Felix Sanchez",
+      "keyPlayers": [
+        "Moises Caicedo",
+        "Piero Hincapie",
+        "Enner Valencia"
+      ],
+      "qualificationNote": "In contention through CONMEBOL pathway.",
+      "appearances": 5,
+      "bestFinish": "Round of 16 (2006)",
+      "baseCamp": "Leon, Mexico"
+    }
+  },
+  {
+    "code": "ENG",
+    "name": "England",
+    "flag": "🏴",
+    "capital": "London",
+    "capitalLat": 51.5072,
+    "capitalLng": -0.1276,
+    "population": 56900000,
+    "region": "Europe",
+    "languages": [
+      "English"
+    ],
+    "blurb": "Balanced squad with consistent late-stage tournament results.",
+    "lat": 52.3555,
+    "lng": -1.1743,
+    "team": {
+      "fifaRank": 4,
+      "confederation": "UEFA",
+      "group": "L",
+      "coach": "Gareth Southgate",
+      "keyPlayers": [
+        "Harry Kane",
+        "Jude Bellingham",
+        "Bukayo Saka"
+      ],
+      "qualificationNote": "Well-positioned in UEFA qualification process.",
+      "appearances": 16,
+      "bestFinish": "Winners (1966)",
+      "baseCamp": "Boston, United States"
+    }
+  },
+  {
+    "code": "ESP",
+    "name": "Spain",
+    "flag": "🇪🇸",
+    "capital": "Madrid",
+    "capitalLat": 40.4168,
+    "capitalLng": -3.7038,
+    "population": 48600000,
+    "region": "Europe",
+    "languages": [
+      "Spanish"
+    ],
+    "blurb": "Possession-heavy side with youthful technical midfielders.",
+    "lat": 40.4637,
+    "lng": -3.7492,
+    "team": {
+      "fifaRank": 8,
+      "confederation": "UEFA",
+      "group": "H",
+      "coach": "Luis de la Fuente",
+      "keyPlayers": [
+        "Rodri",
+        "Pedri",
+        "Lamine Yamal"
+      ],
+      "qualificationNote": "Expected to advance through UEFA qualification.",
+      "appearances": 16,
+      "bestFinish": "Winners (2010)",
+      "baseCamp": "San Diego, United States"
+    }
+  },
+  {
+    "code": "FRA",
+    "name": "France",
+    "flag": "🇫🇷",
+    "capital": "Paris",
+    "capitalLat": 48.8566,
+    "capitalLng": 2.3522,
+    "population": 68040000,
+    "region": "Europe",
+    "languages": [
+      "French"
+    ],
+    "blurb": "Elite tournament team blending depth and tactical flexibility.",
+    "lat": 46.2276,
+    "lng": 2.2137,
+    "team": {
+      "fifaRank": 2,
+      "confederation": "UEFA",
+      "group": "I",
+      "coach": "Didier Deschamps",
+      "keyPlayers": [
+        "Kylian Mbappe",
+        "Aurelien Tchouameni",
+        "Theo Hernandez"
+      ],
+      "qualificationNote": "Projected to qualify from UEFA cycle.",
+      "appearances": 17,
+      "bestFinish": "Winners (1998, 2018)",
+      "baseCamp": "Kansas City, United States"
+    }
+  },
+  {
+    "code": "GER",
+    "name": "Germany",
+    "flag": "🇩🇪",
+    "capital": "Berlin",
+    "capitalLat": 52.52,
+    "capitalLng": 13.405,
+    "population": 84500000,
+    "region": "Europe",
+    "languages": [
+      "German"
+    ],
+    "blurb": "Historically dominant side with strong tournament pedigree.",
+    "lat": 51.1657,
+    "lng": 10.4515,
+    "team": {
+      "fifaRank": 10,
+      "confederation": "UEFA",
+      "group": "E",
+      "coach": "Julian Nagelsmann",
+      "keyPlayers": [
+        "Jamal Musiala",
+        "Kai Havertz",
+        "Antonio Rudiger"
+      ],
+      "qualificationNote": "Likely qualifier via UEFA route.",
+      "appearances": 20,
+      "bestFinish": "Winners (x4)",
+      "baseCamp": "Seattle, United States"
+    }
+  },
+  {
+    "code": "JPN",
+    "name": "Japan",
+    "flag": "🇯🇵",
+    "capital": "Tokyo",
+    "capitalLat": 35.6762,
+    "capitalLng": 139.6503,
+    "population": 123900000,
+    "region": "Asia",
+    "languages": [
+      "Japanese"
+    ],
+    "blurb": "Disciplined high-press unit with fast transitional threat.",
+    "lat": 36.2048,
+    "lng": 138.2529,
+    "team": {
+      "fifaRank": 18,
+      "confederation": "AFC",
+      "group": "F",
+      "coach": "Hajime Moriyasu",
+      "keyPlayers": [
+        "Takefusa Kubo",
+        "Kaoru Mitoma",
+        "Wataru Endo"
+      ],
+      "qualificationNote": "Strong AFC qualifying campaign form.",
+      "appearances": 8,
+      "bestFinish": "Round of 16",
+      "baseCamp": "Calgary, Canada"
+    }
+  },
+  {
+    "code": "KOR",
+    "name": "South Korea",
+    "flag": "🇰🇷",
+    "capital": "Seoul",
+    "capitalLat": 37.5665,
+    "capitalLng": 126.978,
+    "population": 51700000,
+    "region": "Asia",
+    "languages": [
+      "Korean"
+    ],
+    "blurb": "Energetic pressing team with strong wide attacking runners.",
+    "lat": 35.9078,
+    "lng": 127.7669,
+    "team": {
+      "fifaRank": 22,
+      "confederation": "AFC",
+      "group": "A",
+      "coach": "Jurgen Klinsmann",
+      "keyPlayers": [
+        "Son Heung-min",
+        "Lee Kang-in",
+        "Kim Min-jae"
+      ],
+      "qualificationNote": "Strong contender in AFC route.",
+      "appearances": 11,
+      "bestFinish": "Fourth place (2002)",
+      "baseCamp": "Orlando, United States"
+    }
+  },
+  {
+    "code": "MAR",
+    "name": "Morocco",
+    "flag": "🇲🇦",
+    "capital": "Rabat",
+    "capitalLat": 34.0209,
+    "capitalLng": -6.8416,
+    "population": 37800000,
+    "region": "Africa",
+    "languages": [
+      "Arabic",
+      "Amazigh"
+    ],
+    "blurb": "Compact and explosive side after a historic 2022 run.",
+    "lat": 31.7917,
+    "lng": -7.0926,
+    "team": {
+      "fifaRank": 13,
+      "confederation": "CAF",
+      "group": "C",
+      "coach": "Walid Regragui",
+      "keyPlayers": [
+        "Achraf Hakimi",
+        "Sofyan Amrabat",
+        "Youssef En-Nesyri"
+      ],
+      "qualificationNote": "Top contender in CAF qualification path.",
+      "appearances": 7,
+      "bestFinish": "Fourth place (2022)",
+      "baseCamp": "Mexico City, Mexico"
     }
   },
   {
@@ -58,16 +508,22 @@
     "capitalLng": -99.1332,
     "population": 129700000,
     "region": "North America",
-    "languages": ["Spanish"],
+    "languages": [
+      "Spanish"
+    ],
     "blurb": "Co-host nation known for consistency and high-tempo wide play.",
     "lat": 23.6345,
     "lng": -102.5528,
     "team": {
       "fifaRank": 14,
       "confederation": "CONCACAF",
-      "group": "B",
+      "group": "A",
       "coach": "Jaime Lozano",
-      "keyPlayers": ["Santiago Gimenez", "Edson Alvarez", "Orbelin Pineda"],
+      "keyPlayers": [
+        "Santiago Gimenez",
+        "Edson Alvarez",
+        "Orbelin Pineda"
+      ],
       "qualificationNote": "Qualified as host nation.",
       "appearances": 18,
       "bestFinish": "Quarterfinals (1970, 1986)",
@@ -83,16 +539,22 @@
     "capitalLng": 4.9041,
     "population": 17900000,
     "region": "Europe",
-    "languages": ["Dutch"],
+    "languages": [
+      "Dutch"
+    ],
     "blurb": "Technically strong side with fluid pressing and positional play.",
     "lat": 52.1326,
     "lng": 5.2913,
     "team": {
       "fifaRank": 7,
       "confederation": "UEFA",
-      "group": "B",
+      "group": "F",
       "coach": "Ronald Koeman",
-      "keyPlayers": ["Virgil van Dijk", "Xavi Simons", "Cody Gakpo"],
+      "keyPlayers": [
+        "Virgil van Dijk",
+        "Xavi Simons",
+        "Cody Gakpo"
+      ],
       "qualificationNote": "Projected qualifier through UEFA.",
       "appearances": 12,
       "bestFinish": "Runners-up (1974, 1978, 2010)",
@@ -100,328 +562,35 @@
     }
   },
   {
-    "code": "CAN",
-    "name": "Canada",
-    "flag": "🇨🇦",
-    "capital": "Ottawa",
-    "capitalLat": 45.4215,
-    "capitalLng": -75.6972,
-    "population": 40400000,
-    "region": "North America",
-    "languages": ["English", "French"],
-    "blurb": "Co-host with a rapid transition attack and rising young core.",
-    "lat": 56.1304,
-    "lng": -106.3468,
+    "code": "NZL",
+    "name": "New Zealand",
+    "flag": "🇳🇿",
+    "capital": "Wellington",
+    "capitalLat": -41.2866,
+    "capitalLng": 174.7756,
+    "population": 5300000,
+    "region": "Oceania",
+    "languages": [
+      "English",
+      "Maori"
+    ],
+    "blurb": "Direct and disciplined side returning to the global stage.",
+    "lat": -40.9006,
+    "lng": 174.886,
     "team": {
-      "fifaRank": 49,
-      "confederation": "CONCACAF",
-      "group": "C",
-      "coach": "Jesse Marsch",
-      "keyPlayers": ["Alphonso Davies", "Jonathan David", "Tajon Buchanan"],
-      "qualificationNote": "Qualified as host nation.",
+      "fifaRank": 44,
+      "confederation": "OFC",
+      "group": "G",
+      "coach": "Darren Bazeley",
+      "keyPlayers": [
+        "Chris Wood",
+        "Joe Bell",
+        "Liberato Cacace"
+      ],
+      "qualificationNote": "Qualified via OFC route.",
       "appearances": 3,
       "bestFinish": "Group stage",
       "baseCamp": "Vancouver, Canada"
-    }
-  },
-  {
-    "code": "AUS",
-    "name": "Australia",
-    "flag": "🇦🇺",
-    "capital": "Canberra",
-    "capitalLat": -35.2809,
-    "capitalLng": 149.13,
-    "population": 26800000,
-    "region": "Oceania",
-    "languages": ["English"],
-    "blurb": "Physical, organized side with quick transitions and set-piece threat.",
-    "lat": -25.2744,
-    "lng": 133.7751,
-    "team": {
-      "fifaRank": 24,
-      "confederation": "AFC",
-      "group": "C",
-      "coach": "Graham Arnold",
-      "keyPlayers": ["Mathew Ryan", "Jackson Irvine", "Awer Mabil"],
-      "qualificationNote": "Expected to challenge through AFC qualification.",
-      "appearances": 7,
-      "bestFinish": "Round of 16 (2006, 2022)",
-      "baseCamp": "Edmonton, Canada"
-    }
-  },
-  {
-    "code": "BRA",
-    "name": "Brazil",
-    "flag": "🇧🇷",
-    "capital": "Brasilia",
-    "capitalLat": -15.7939,
-    "capitalLng": -47.8828,
-    "population": 214300000,
-    "region": "South America",
-    "languages": ["Portuguese"],
-    "blurb": "Five-time champions with technical quality at every line.",
-    "lat": -14.235,
-    "lng": -51.9253,
-    "team": {
-      "fifaRank": 5,
-      "confederation": "CONMEBOL",
-      "group": "D",
-      "coach": "Dorival Junior",
-      "keyPlayers": ["Vinicius Junior", "Rodrygo", "Bruno Guimaraes"],
-      "qualificationNote": "Expected to qualify through CONMEBOL campaign.",
-      "appearances": 22,
-      "bestFinish": "Winners (x5)",
-      "baseCamp": "Miami, United States"
-    }
-  },
-  {
-    "code": "KOR",
-    "name": "South Korea",
-    "flag": "🇰🇷",
-    "capital": "Seoul",
-    "capitalLat": 37.5665,
-    "capitalLng": 126.978,
-    "population": 51700000,
-    "region": "Asia",
-    "languages": ["Korean"],
-    "blurb": "Energetic pressing team with strong wide attacking runners.",
-    "lat": 35.9078,
-    "lng": 127.7669,
-    "team": {
-      "fifaRank": 22,
-      "confederation": "AFC",
-      "group": "D",
-      "coach": "Jurgen Klinsmann",
-      "keyPlayers": ["Son Heung-min", "Lee Kang-in", "Kim Min-jae"],
-      "qualificationNote": "Strong contender in AFC route.",
-      "appearances": 11,
-      "bestFinish": "Fourth place (2002)",
-      "baseCamp": "Orlando, United States"
-    }
-  },
-  {
-    "code": "ARG",
-    "name": "Argentina",
-    "flag": "🇦🇷",
-    "capital": "Buenos Aires",
-    "capitalLat": -34.6037,
-    "capitalLng": -58.3816,
-    "population": 46040000,
-    "region": "South America",
-    "languages": ["Spanish"],
-    "blurb": "Current world champions with elite positional control.",
-    "lat": -38.4161,
-    "lng": -63.6167,
-    "team": {
-      "fifaRank": 1,
-      "confederation": "CONMEBOL",
-      "group": "E",
-      "coach": "Lionel Scaloni",
-      "keyPlayers": ["Lionel Messi", "Julian Alvarez", "Enzo Fernandez"],
-      "qualificationNote": "Strong position in South American qualifiers.",
-      "appearances": 18,
-      "bestFinish": "Winners (1978, 1986, 2022)",
-      "baseCamp": "Atlanta, United States"
-    }
-  },
-  {
-    "code": "COL",
-    "name": "Colombia",
-    "flag": "🇨🇴",
-    "capital": "Bogota",
-    "capitalLat": 4.711,
-    "capitalLng": -74.0721,
-    "population": 52200000,
-    "region": "South America",
-    "languages": ["Spanish"],
-    "blurb": "Counter-attacking side with high-end wing play and defensive steel.",
-    "lat": 4.5709,
-    "lng": -74.2973,
-    "team": {
-      "fifaRank": 15,
-      "confederation": "CONMEBOL",
-      "group": "E",
-      "coach": "Nestor Lorenzo",
-      "keyPlayers": ["Luis Diaz", "James Rodriguez", "Jefferson Lerma"],
-      "qualificationNote": "In contention through CONMEBOL qualifiers.",
-      "appearances": 6,
-      "bestFinish": "Quarterfinals (2014)",
-      "baseCamp": "Philadelphia, United States"
-    }
-  },
-  {
-    "code": "FRA",
-    "name": "France",
-    "flag": "🇫🇷",
-    "capital": "Paris",
-    "capitalLat": 48.8566,
-    "capitalLng": 2.3522,
-    "population": 68040000,
-    "region": "Europe",
-    "languages": ["French"],
-    "blurb": "Elite tournament team blending depth and tactical flexibility.",
-    "lat": 46.2276,
-    "lng": 2.2137,
-    "team": {
-      "fifaRank": 2,
-      "confederation": "UEFA",
-      "group": "F",
-      "coach": "Didier Deschamps",
-      "keyPlayers": ["Kylian Mbappe", "Aurelien Tchouameni", "Theo Hernandez"],
-      "qualificationNote": "Projected to qualify from UEFA cycle.",
-      "appearances": 17,
-      "bestFinish": "Winners (1998, 2018)",
-      "baseCamp": "Kansas City, United States"
-    }
-  },
-  {
-    "code": "URU",
-    "name": "Uruguay",
-    "flag": "🇺🇾",
-    "capital": "Montevideo",
-    "capitalLat": -34.9011,
-    "capitalLng": -56.1645,
-    "population": 3400000,
-    "region": "South America",
-    "languages": ["Spanish"],
-    "blurb": "Compact and aggressive unit with elite defensive leadership.",
-    "lat": -32.5228,
-    "lng": -55.7658,
-    "team": {
-      "fifaRank": 16,
-      "confederation": "CONMEBOL",
-      "group": "F",
-      "coach": "Marcelo Bielsa",
-      "keyPlayers": ["Federico Valverde", "Darwin Nunez", "Ronald Araujo"],
-      "qualificationNote": "Tracking well in South American qualifying.",
-      "appearances": 14,
-      "bestFinish": "Winners (1930, 1950)",
-      "baseCamp": "Cincinnati, United States"
-    }
-  },
-  {
-    "code": "ENG",
-    "name": "England",
-    "flag": "🏴",
-    "capital": "London",
-    "capitalLat": 51.5072,
-    "capitalLng": -0.1276,
-    "population": 56900000,
-    "region": "Europe",
-    "languages": ["English"],
-    "blurb": "Balanced squad with consistent late-stage tournament results.",
-    "lat": 52.3555,
-    "lng": -1.1743,
-    "team": {
-      "fifaRank": 4,
-      "confederation": "UEFA",
-      "group": "G",
-      "coach": "Gareth Southgate",
-      "keyPlayers": ["Harry Kane", "Jude Bellingham", "Bukayo Saka"],
-      "qualificationNote": "Well-positioned in UEFA qualification process.",
-      "appearances": 16,
-      "bestFinish": "Winners (1966)",
-      "baseCamp": "Boston, United States"
-    }
-  },
-  {
-    "code": "BEL",
-    "name": "Belgium",
-    "flag": "🇧🇪",
-    "capital": "Brussels",
-    "capitalLat": 50.8503,
-    "capitalLng": 4.3517,
-    "population": 11700000,
-    "region": "Europe",
-    "languages": ["Dutch", "French", "German"],
-    "blurb": "Experienced core with tactical flexibility and strong midfield control.",
-    "lat": 50.5039,
-    "lng": 4.4699,
-    "team": {
-      "fifaRank": 9,
-      "confederation": "UEFA",
-      "group": "G",
-      "coach": "Domenico Tedesco",
-      "keyPlayers": ["Kevin De Bruyne", "Jeremy Doku", "Romelu Lukaku"],
-      "qualificationNote": "Expected UEFA qualifier.",
-      "appearances": 14,
-      "bestFinish": "Third place (2018)",
-      "baseCamp": "New York, United States"
-    }
-  },
-  {
-    "code": "GER",
-    "name": "Germany",
-    "flag": "🇩🇪",
-    "capital": "Berlin",
-    "capitalLat": 52.52,
-    "capitalLng": 13.405,
-    "population": 84500000,
-    "region": "Europe",
-    "languages": ["German"],
-    "blurb": "Historically dominant side with strong tournament pedigree.",
-    "lat": 51.1657,
-    "lng": 10.4515,
-    "team": {
-      "fifaRank": 10,
-      "confederation": "UEFA",
-      "group": "H",
-      "coach": "Julian Nagelsmann",
-      "keyPlayers": ["Jamal Musiala", "Kai Havertz", "Antonio Rudiger"],
-      "qualificationNote": "Likely qualifier via UEFA route.",
-      "appearances": 20,
-      "bestFinish": "Winners (x4)",
-      "baseCamp": "Seattle, United States"
-    }
-  },
-  {
-    "code": "CRO",
-    "name": "Croatia",
-    "flag": "🇭🇷",
-    "capital": "Zagreb",
-    "capitalLat": 45.815,
-    "capitalLng": 15.9819,
-    "population": 3900000,
-    "region": "Europe",
-    "languages": ["Croatian"],
-    "blurb": "Midfield-driven side with strong tournament composure.",
-    "lat": 45.1,
-    "lng": 15.2,
-    "team": {
-      "fifaRank": 12,
-      "confederation": "UEFA",
-      "group": "H",
-      "coach": "Zlatko Dalic",
-      "keyPlayers": ["Luka Modric", "Josko Gvardiol", "Mateo Kovacic"],
-      "qualificationNote": "Expected to stay competitive in UEFA qualifying.",
-      "appearances": 7,
-      "bestFinish": "Runners-up (2018)",
-      "baseCamp": "Portland, United States"
-    }
-  },
-  {
-    "code": "ESP",
-    "name": "Spain",
-    "flag": "🇪🇸",
-    "capital": "Madrid",
-    "capitalLat": 40.4168,
-    "capitalLng": -3.7038,
-    "population": 48600000,
-    "region": "Europe",
-    "languages": ["Spanish"],
-    "blurb": "Possession-heavy side with youthful technical midfielders.",
-    "lat": 40.4637,
-    "lng": -3.7492,
-    "team": {
-      "fifaRank": 8,
-      "confederation": "UEFA",
-      "group": "I",
-      "coach": "Luis de la Fuente",
-      "keyPlayers": ["Rodri", "Pedri", "Lamine Yamal"],
-      "qualificationNote": "Expected to advance through UEFA qualification.",
-      "appearances": 16,
-      "bestFinish": "Winners (2010)",
-      "baseCamp": "San Diego, United States"
     }
   },
   {
@@ -433,120 +602,26 @@
     "capitalLng": -9.1393,
     "population": 10400000,
     "region": "Europe",
-    "languages": ["Portuguese"],
+    "languages": [
+      "Portuguese"
+    ],
     "blurb": "Technically sharp side with decisive attacking options.",
     "lat": 39.3999,
     "lng": -8.2245,
     "team": {
       "fifaRank": 6,
       "confederation": "UEFA",
-      "group": "I",
+      "group": "K",
       "coach": "Roberto Martinez",
-      "keyPlayers": ["Bruno Fernandes", "Bernardo Silva", "Rafael Leao"],
+      "keyPlayers": [
+        "Bruno Fernandes",
+        "Bernardo Silva",
+        "Rafael Leao"
+      ],
       "qualificationNote": "Projected UEFA qualifier.",
       "appearances": 8,
       "bestFinish": "Third place (1966)",
       "baseCamp": "San Jose, United States"
-    }
-  },
-  {
-    "code": "JPN",
-    "name": "Japan",
-    "flag": "🇯🇵",
-    "capital": "Tokyo",
-    "capitalLat": 35.6762,
-    "capitalLng": 139.6503,
-    "population": 123900000,
-    "region": "Asia",
-    "languages": ["Japanese"],
-    "blurb": "Disciplined high-press unit with fast transitional threat.",
-    "lat": 36.2048,
-    "lng": 138.2529,
-    "team": {
-      "fifaRank": 18,
-      "confederation": "AFC",
-      "group": "J",
-      "coach": "Hajime Moriyasu",
-      "keyPlayers": ["Takefusa Kubo", "Kaoru Mitoma", "Wataru Endo"],
-      "qualificationNote": "Strong AFC qualifying campaign form.",
-      "appearances": 8,
-      "bestFinish": "Round of 16",
-      "baseCamp": "Calgary, Canada"
-    }
-  },
-  {
-    "code": "DEN",
-    "name": "Denmark",
-    "flag": "🇩🇰",
-    "capital": "Copenhagen",
-    "capitalLat": 55.6761,
-    "capitalLng": 12.5683,
-    "population": 6000000,
-    "region": "Europe",
-    "languages": ["Danish"],
-    "blurb": "Structured, intelligent team with strong defensive spacing.",
-    "lat": 56.2639,
-    "lng": 9.5018,
-    "team": {
-      "fifaRank": 21,
-      "confederation": "UEFA",
-      "group": "J",
-      "coach": "Kasper Hjulmand",
-      "keyPlayers": ["Christian Eriksen", "Rasmus Hojlund", "Joachim Andersen"],
-      "qualificationNote": "Expected to remain in UEFA contention.",
-      "appearances": 7,
-      "bestFinish": "Quarterfinals (1998)",
-      "baseCamp": "Montreal, Canada"
-    }
-  },
-  {
-    "code": "MAR",
-    "name": "Morocco",
-    "flag": "🇲🇦",
-    "capital": "Rabat",
-    "capitalLat": 34.0209,
-    "capitalLng": -6.8416,
-    "population": 37800000,
-    "region": "Africa",
-    "languages": ["Arabic", "Amazigh"],
-    "blurb": "Compact and explosive side after a historic 2022 run.",
-    "lat": 31.7917,
-    "lng": -7.0926,
-    "team": {
-      "fifaRank": 13,
-      "confederation": "CAF",
-      "group": "K",
-      "coach": "Walid Regragui",
-      "keyPlayers": ["Achraf Hakimi", "Sofyan Amrabat", "Youssef En-Nesyri"],
-      "qualificationNote": "Top contender in CAF qualification path.",
-      "appearances": 7,
-      "bestFinish": "Fourth place (2022)",
-      "baseCamp": "Mexico City, Mexico"
-    }
-  },
-  {
-    "code": "SUI",
-    "name": "Switzerland",
-    "flag": "🇨🇭",
-    "capital": "Bern",
-    "capitalLat": 46.948,
-    "capitalLng": 7.4474,
-    "population": 8900000,
-    "region": "Europe",
-    "languages": ["German", "French", "Italian"],
-    "blurb": "Balanced side with strong structure and transition discipline.",
-    "lat": 46.8182,
-    "lng": 8.2275,
-    "team": {
-      "fifaRank": 19,
-      "confederation": "UEFA",
-      "group": "K",
-      "coach": "Murat Yakin",
-      "keyPlayers": ["Granit Xhaka", "Manuel Akanji", "Breel Embolo"],
-      "qualificationNote": "Consistent UEFA qualification contender.",
-      "appearances": 12,
-      "bestFinish": "Quarterfinals (1934, 1938, 1954)",
-      "baseCamp": "Puebla, Mexico"
     }
   },
   {
@@ -558,16 +633,23 @@
     "capitalLng": -17.4677,
     "population": 18100000,
     "region": "Africa",
-    "languages": ["French", "Wolof"],
+    "languages": [
+      "French",
+      "Wolof"
+    ],
     "blurb": "Physically strong, organized side with tournament edge.",
     "lat": 14.4974,
     "lng": -14.4524,
     "team": {
       "fifaRank": 20,
       "confederation": "CAF",
-      "group": "L",
+      "group": "I",
       "coach": "Aliou Cisse",
-      "keyPlayers": ["Sadio Mane", "Kalidou Koulibaly", "Ismaila Sarr"],
+      "keyPlayers": [
+        "Sadio Mane",
+        "Kalidou Koulibaly",
+        "Ismaila Sarr"
+      ],
       "qualificationNote": "Competing for one of CAF's expanded spots.",
       "appearances": 4,
       "bestFinish": "Quarterfinals (2002)",
@@ -575,28 +657,98 @@
     }
   },
   {
-    "code": "ECU",
-    "name": "Ecuador",
-    "flag": "🇪🇨",
-    "capital": "Quito",
-    "capitalLat": -0.1807,
-    "capitalLng": -78.4678,
-    "population": 18300000,
-    "region": "South America",
-    "languages": ["Spanish"],
-    "blurb": "Young athletic side with quick ball progression and pressure resistance.",
-    "lat": -1.8312,
-    "lng": -78.1834,
+    "code": "SUI",
+    "name": "Switzerland",
+    "flag": "🇨🇭",
+    "capital": "Bern",
+    "capitalLat": 46.948,
+    "capitalLng": 7.4474,
+    "population": 8900000,
+    "region": "Europe",
+    "languages": [
+      "German",
+      "French",
+      "Italian"
+    ],
+    "blurb": "Balanced side with strong structure and transition discipline.",
+    "lat": 46.8182,
+    "lng": 8.2275,
     "team": {
-      "fifaRank": 31,
+      "fifaRank": 19,
+      "confederation": "UEFA",
+      "group": "B",
+      "coach": "Murat Yakin",
+      "keyPlayers": [
+        "Granit Xhaka",
+        "Manuel Akanji",
+        "Breel Embolo"
+      ],
+      "qualificationNote": "Consistent UEFA qualification contender.",
+      "appearances": 12,
+      "bestFinish": "Quarterfinals (1934, 1938, 1954)",
+      "baseCamp": "Puebla, Mexico"
+    }
+  },
+  {
+    "code": "URU",
+    "name": "Uruguay",
+    "flag": "🇺🇾",
+    "capital": "Montevideo",
+    "capitalLat": -34.9011,
+    "capitalLng": -56.1645,
+    "population": 3400000,
+    "region": "South America",
+    "languages": [
+      "Spanish"
+    ],
+    "blurb": "Compact and aggressive unit with elite defensive leadership.",
+    "lat": -32.5228,
+    "lng": -55.7658,
+    "team": {
+      "fifaRank": 16,
       "confederation": "CONMEBOL",
-      "group": "L",
-      "coach": "Felix Sanchez",
-      "keyPlayers": ["Moises Caicedo", "Piero Hincapie", "Enner Valencia"],
-      "qualificationNote": "In contention through CONMEBOL pathway.",
-      "appearances": 5,
-      "bestFinish": "Round of 16 (2006)",
-      "baseCamp": "Leon, Mexico"
+      "group": "H",
+      "coach": "Marcelo Bielsa",
+      "keyPlayers": [
+        "Federico Valverde",
+        "Darwin Nunez",
+        "Ronald Araujo"
+      ],
+      "qualificationNote": "Tracking well in South American qualifying.",
+      "appearances": 14,
+      "bestFinish": "Winners (1930, 1950)",
+      "baseCamp": "Cincinnati, United States"
+    }
+  },
+  {
+    "code": "USA",
+    "name": "United States",
+    "flag": "🇺🇸",
+    "capital": "Washington, D.C.",
+    "capitalLat": 38.9072,
+    "capitalLng": -77.0369,
+    "population": 334900000,
+    "region": "North America",
+    "languages": [
+      "English"
+    ],
+    "blurb": "Co-host nation with deep talent depth and major-host momentum.",
+    "lat": 39.8283,
+    "lng": -98.5795,
+    "team": {
+      "fifaRank": 11,
+      "confederation": "CONCACAF",
+      "group": "D",
+      "coach": "Mauricio Pochettino",
+      "keyPlayers": [
+        "Christian Pulisic",
+        "Weston McKennie",
+        "Antonee Robinson"
+      ],
+      "qualificationNote": "Qualified as host nation.",
+      "appearances": 12,
+      "bestFinish": "Third place (1930)",
+      "baseCamp": "Dallas, United States"
     }
   }
 ]

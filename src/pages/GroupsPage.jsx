@@ -36,7 +36,7 @@ export default function GroupsPage() {
     <section className="stack-lg">
       <header>
         <h2>Groups A-L</h2>
-        <p>Select a country in any group to preview the shared team summary card (current sample includes two teams per group).</p>
+        <p>Select a country in any group to preview the shared team summary card (official-source subset: two teams per group).</p>
       </header>
       {seededGroups.map((entry) => {
         return (

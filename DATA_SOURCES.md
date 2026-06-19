@@ -1,14 +1,23 @@
 # Data Sources and Accuracy Policy
 
-This project distinguishes between `sample` data and `official` data.
+This project distinguishes between `sample`, `partial-official`, and `official` data.
 
 ## Current Status
 
-- Status: `sample`
-- Source: local seeded JSON files in `src/data/`
-- Purpose: UI and deployment validation
+- Status: `partial-official`
+- Source type: official FIFA references, normalized into a subset JSON dataset
+- Scope: 2 teams per group + 1 representative fixture per group
 
-## Files
+## Source References (Current)
+
+- FIFA final draw results (group assignments):
+  - https://www.fifa.market/en/articles/final-draw-results
+- FIFA media release (updated 104-match schedule context):
+  - https://tickets.fifa.com/media-releases/updated-world-cup-2026-match-schedule-venues-kick-off-times-104-matches
+- FIFA match schedule article mirror used for match-number/date/venue lookup:
+  - https://fifa-com.app/en/articles/View-the-FIFA-World-Cup-26%E2%84%A2-match-schedule
+
+## Files in This Repo
 
 - `src/data/countries.json`
 - `src/data/groups.json`
@@ -17,12 +26,14 @@ This project distinguishes between `sample` data and `official` data.
 
 ## Phase A Workflow
 
-1. Select authoritative sources for groups and fixtures.
-2. Record source URL(s) and verification date in `src/data/data-status.json`.
-3. Replace seeded JSON values with verified records.
-4. Set `status` to `official` only after verification is complete.
+1. Use authoritative references for group and fixture records.
+2. Normalize into project JSON schemas.
+3. Record references + verification date in `src/data/data-status.json`.
+4. Upgrade status:
+   - `sample` -> `partial-official` for verified subsets
+   - `partial-official` -> `official` only when full 48-team / 104-match data is verified
 
-## Notes
+## Policy
 
-- Do not mix seeded and official records without clearly labeling `status` as `sample`.
-- Any new data import should include source attribution and date of verification.
+- Do not mark status `official` until full dataset verification is complete.
+- If any record is inferred or incomplete, keep status at `sample` or `partial-official`.
