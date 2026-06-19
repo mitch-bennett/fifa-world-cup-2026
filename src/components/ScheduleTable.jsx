@@ -7,11 +7,16 @@ function formatDate(value) {
 
 export default function ScheduleTable({ matches, teamsByCode }) {
   if (!matches.length) {
-    return <p className="empty">No matches found for these filters.</p>;
+    return (
+      <div className="card">
+        <p className="empty">No matches found for the selected filters.</p>
+      </div>
+    );
   }
 
   return (
     <div className="card table-shell">
+      <p className="table-meta">{matches.length} match(es) shown</p>
       <table>
         <thead>
           <tr>

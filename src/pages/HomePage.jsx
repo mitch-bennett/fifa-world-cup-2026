@@ -16,12 +16,20 @@ export default function HomePage() {
         <h2>Interactive Globe</h2>
         <p>Click a highlighted country to open a preview before navigating to the full profile.</p>
         <Suspense fallback={<p className="empty">Loading globe...</p>}>
-          <GlobeView countries={countries} onCountrySelect={setSelectedCode} />
+          <GlobeView
+            countries={countries}
+            selectedCode={selectedCode}
+            onCountrySelect={setSelectedCode}
+          />
         </Suspense>
       </div>
       <aside>
         <h2>Country Preview</h2>
-        <CountrySummary country={selectedCountry} />
+        {selectedCountry ? (
+          <CountrySummary country={selectedCountry} />
+        ) : (
+          <p className="empty">Select a country marker to preview team details.</p>
+        )}
       </aside>
     </section>
   );

@@ -210,6 +210,7 @@ nav {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  align-items: end;
 }
 
 .filters label {
@@ -226,8 +227,27 @@ select {
   padding: 0.45rem;
 }
 
+.reset-btn {
+  border: 1px solid var(--outline);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink);
+  padding: 0.45rem 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 .table-shell {
   overflow-x: auto;
+}
+
+.table-meta {
+  margin: 0 0 0.5rem;
 }
 
 table {

@@ -10,19 +10,40 @@ export default function SchedulePage() {
 
   const [groupFilter, setGroupFilter] = useState('ALL');
   const [teamFilter, setTeamFilter] = useState('ALL');
+  const [dateFilter, setDateFilter] = useState('ALL');
+  const [sortOrder, setSortOrder] = useState('ASC');
 
   const groups = useMemo(
     () => ['ALL', ...Array.from(new Set(matches.map((match) => match.group))).sort()],
     [matches],
   );
 
+  const matchDates = useMemo(
+    () => ['ALL', ...Array.from(new Set(matches.map((match) => match.date.slice(0, 10)))).sort()],
+    [matches],
+  );
+
   const filteredMatches = useMemo(() => {
-    return matches.filter((match) => {
+    const filtered = matches.filter((match) => {
       const groupPass = groupFilter === 'ALL' || match.group === groupFilter;
       const teamPass = teamFilter === 'ALL' || match.home === teamFilter || match.away === teamFilter;
-      return groupPass && teamPass;
+      const datePass = dateFilter === 'ALL' || match.date.startsWith(dateFilter);
+      return groupPass && teamPass && datePass;
     });
-  }, [matches, groupFilter, teamFilter]);
+
+    return filtered.sort((left, right) => {
+      const leftTime = new Date(left.date).getTime();
+      const rightTime = new Date(right.date).getTime();
+      return sortOrder === 'ASC' ? leftTime - rightTime : rightTime - leftTime;
+    });
+  }, [matches, groupFilter, teamFilter, dateFilter, sortOrder]);
+
+  function resetFilters() {
+    setGroupFilter('ALL');
+    setTeamFilter('ALL');
+    setDateFilter('ALL');
+    setSortOrder('ASC');
+  }
 
   return (
     <section className="stack-lg">
@@ -54,6 +75,29 @@ export default function SchedulePage() {
             ))}
           </select>
         </label>
+
+        <label>
+          Date
+          <select value={dateFilter} onChange={(event) => setDateFilter(event.target.value)}>
+            {matchDates.map((date) => (
+              <option key={date} value={date}>
+                {date}
+              </option>
+            ))}
+          </select>
+        </label>
+
+        <label>
+          Sort
+          <select value={sortOrder} onChange={(event) => setSortOrder(event.target.value)}>
+            <option value="ASC">Earliest first</option>
+            <option value="DESC">Latest first</option>
+          </select>
+        </label>
+
+        <button type="button" className="reset-btn" onClick={resetFilters}>
+          Reset filters
+        </button>
       </div>
 
       <ScheduleTable matches={filteredMatches} teamsByCode={byCode} />

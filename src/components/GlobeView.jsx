@@ -1,18 +1,38 @@
-import { useMemo, useRef } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
 import Globe from 'react-globe.gl';
 
-export default function GlobeView({ countries, onCountrySelect }) {
+export default function GlobeView({ countries, selectedCode, onCountrySelect }) {
   const globeRef = useRef(null);
 
   const pointsData = useMemo(
     () =>
       countries.map((country) => ({
         ...country,
-        size: 0.4,
-        color: '#f9d342',
+        size: country.code === selectedCode ? 0.62 : 0.4,
+        color: country.code === selectedCode ? '#00d1ff' : '#f9d342',
       })),
-    [countries],
+    [countries, selectedCode],
   );
+
+  useEffect(() => {
+    if (!globeRef.current) {
+      return;
+    }
+    const controls = globeRef.current.controls();
+    controls.autoRotate = true;
+    controls.autoRotateSpeed = 0.45;
+  }, []);
+
+  useEffect(() => {
+    if (!globeRef.current || !selectedCode) {
+      return;
+    }
+    const selected = countries.find((country) => country.code === selectedCode);
+    if (!selected) {
+      return;
+    }
+    globeRef.current.pointOfView({ lat: selected.lat, lng: selected.lng, altitude: 1.65 }, 700);
+  }, [countries, selectedCode]);
 
   return (
     <div className="globe-canvas">
@@ -25,6 +45,8 @@ export default function GlobeView({ countries, onCountrySelect }) {
         pointAltitude="size"
         pointColor="color"
         pointRadius={0.25}
+        atmosphereColor="#7dc7ff"
+        atmosphereAltitude={0.16}
         pointLabel={(d) => `${d.flag} ${d.name}`}
         onPointClick={(point) => onCountrySelect(point.code)}
       />
