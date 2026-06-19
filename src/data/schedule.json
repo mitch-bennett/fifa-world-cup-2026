@@ -1,56 +1,14 @@
 [
-  {
-    "id": "m-001",
-    "date": "2026-06-12T19:00:00-05:00",
-    "group": "A",
-    "home": "USA",
-    "away": "MEX",
-    "venue": "Estadio Azteca",
-    "city": "Mexico City"
-  },
-  {
-    "id": "m-002",
-    "date": "2026-06-13T15:00:00-05:00",
-    "group": "B",
-    "home": "CAN",
-    "away": "BRA",
-    "venue": "BMO Field",
-    "city": "Toronto"
-  },
-  {
-    "id": "m-003",
-    "date": "2026-06-14T14:00:00-05:00",
-    "group": "C",
-    "home": "ARG",
-    "away": "FRA",
-    "venue": "MetLife Stadium",
-    "city": "East Rutherford"
-  },
-  {
-    "id": "m-004",
-    "date": "2026-06-14T20:00:00-05:00",
-    "group": "D",
-    "home": "ENG",
-    "away": "GER",
-    "venue": "AT&T Stadium",
-    "city": "Arlington"
-  },
-  {
-    "id": "m-005",
-    "date": "2026-06-15T16:00:00-05:00",
-    "group": "E",
-    "home": "ESP",
-    "away": "JPN",
-    "venue": "SoFi Stadium",
-    "city": "Inglewood"
-  },
-  {
-    "id": "m-006",
-    "date": "2026-06-16T18:00:00-05:00",
-    "group": "F",
-    "home": "MAR",
-    "away": "SEN",
-    "venue": "Arrowhead Stadium",
-    "city": "Kansas City"
-  }
+  { "id": "m-001", "date": "2026-06-12T19:00:00-05:00", "group": "A", "home": "USA", "away": "CRC", "venue": "SoFi Stadium", "city": "Inglewood" },
+  { "id": "m-002", "date": "2026-06-13T16:00:00-05:00", "group": "B", "home": "MEX", "away": "NED", "venue": "Estadio Akron", "city": "Guadalajara" },
+  { "id": "m-003", "date": "2026-06-14T15:00:00-05:00", "group": "C", "home": "CAN", "away": "AUS", "venue": "BC Place", "city": "Vancouver" },
+  { "id": "m-004", "date": "2026-06-14T20:00:00-05:00", "group": "D", "home": "BRA", "away": "KOR", "venue": "Hard Rock Stadium", "city": "Miami Gardens" },
+  { "id": "m-005", "date": "2026-06-15T16:00:00-05:00", "group": "E", "home": "ARG", "away": "COL", "venue": "Mercedes-Benz Stadium", "city": "Atlanta" },
+  { "id": "m-006", "date": "2026-06-15T21:00:00-05:00", "group": "F", "home": "FRA", "away": "URU", "venue": "Arrowhead Stadium", "city": "Kansas City" },
+  { "id": "m-007", "date": "2026-06-16T17:00:00-05:00", "group": "G", "home": "ENG", "away": "BEL", "venue": "MetLife Stadium", "city": "East Rutherford" },
+  { "id": "m-008", "date": "2026-06-16T20:30:00-05:00", "group": "H", "home": "GER", "away": "CRO", "venue": "Lumen Field", "city": "Seattle" },
+  { "id": "m-009", "date": "2026-06-17T16:00:00-05:00", "group": "I", "home": "ESP", "away": "POR", "venue": "Levi's Stadium", "city": "Santa Clara" },
+  { "id": "m-010", "date": "2026-06-17T20:00:00-05:00", "group": "J", "home": "JPN", "away": "DEN", "venue": "BMO Field", "city": "Toronto" },
+  { "id": "m-011", "date": "2026-06-18T16:00:00-05:00", "group": "K", "home": "MAR", "away": "SUI", "venue": "Estadio Azteca", "city": "Mexico City" },
+  { "id": "m-012", "date": "2026-06-18T20:00:00-05:00", "group": "L", "home": "SEN", "away": "ECU", "venue": "Estadio BBVA", "city": "Monterrey" }
 ]

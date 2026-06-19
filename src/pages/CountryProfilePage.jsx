@@ -70,6 +70,7 @@ export default function CountryProfilePage() {
             <li>Appearances: {country.team.appearances}</li>
             <li>Best finish: {country.team.bestFinish}</li>
             <li>Qualification: {country.team.qualificationNote}</li>
+            <li>Base camp: {country.team.baseCamp || 'TBD'}</li>
             <li>Key players: {country.team.keyPlayers.join(', ')}</li>
           </ul>
         </article>
@@ -86,7 +87,9 @@ export default function CountryProfilePage() {
 
       <article className="card">
         <h3>Fixtures (Sample Data)</h3>
-        <p className="empty">These are seeded sample fixtures for UI testing, not final official matches.</p>
+        <p className="empty">
+          These are seeded sample fixtures for UI testing and group flow validation, not the final official match list.
+        </p>
         {fixtures.length === 0 ? (
           <p className="empty">No fixtures in the initial dataset yet.</p>
         ) : (
