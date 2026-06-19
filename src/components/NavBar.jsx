@@ -13,7 +13,7 @@ export default function NavBar() {
         <span className="brand-kicker">FIFA 2026</span>
         <h1>World Cup Atlas</h1>
       </div>
-      <nav>
+      <nav aria-label="Primary navigation">
         {navItems.map((item) => (
           <NavLink
             key={item.to}

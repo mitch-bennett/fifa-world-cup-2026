@@ -107,6 +107,7 @@ export default function SchedulePage() {
           type="button"
           className={`team-pill${viewMode === 'TABLE' ? ' active' : ''}`}
           onClick={() => setViewMode('TABLE')}
+          aria-pressed={viewMode === 'TABLE'}
         >
           Table view
         </button>
@@ -114,6 +115,7 @@ export default function SchedulePage() {
           type="button"
           className={`team-pill${viewMode === 'CARDS' ? ' active' : ''}`}
           onClick={() => setViewMode('CARDS')}
+          aria-pressed={viewMode === 'CARDS'}
         >
           Card view
         </button>

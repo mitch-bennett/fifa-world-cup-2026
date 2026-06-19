@@ -17,17 +17,18 @@ export default function GroupCard({ group, teams, standings, selectedCode, onSel
           {standings?.length > 0 && (
             <div className="standings-wrap">
               <table className="standings-table">
+                <caption className="sr-only">Group {group} sample standings</caption>
                 <thead>
                   <tr>
-                    <th>Team</th>
-                    <th>P</th>
-                    <th>W</th>
-                    <th>D</th>
-                    <th>L</th>
-                    <th>GF</th>
-                    <th>GA</th>
-                    <th>GD</th>
-                    <th>Pts</th>
+                    <th scope="col">Team</th>
+                    <th scope="col">P</th>
+                    <th scope="col">W</th>
+                    <th scope="col">D</th>
+                    <th scope="col">L</th>
+                    <th scope="col">GF</th>
+                    <th scope="col">GA</th>
+                    <th scope="col">GD</th>
+                    <th scope="col">Pts</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -58,6 +59,7 @@ export default function GroupCard({ group, teams, standings, selectedCode, onSel
                 type="button"
                 className={`team-pill${country.code === selectedCountry?.code ? ' active' : ''}`}
                 onClick={() => onSelect(country.code)}
+                aria-pressed={country.code === selectedCountry?.code}
               >
                 {country.flag} {country.name}
               </button>

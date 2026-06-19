@@ -18,12 +18,13 @@ export default function ScheduleTable({ matches, teamsByCode }) {
     <div className="card table-shell">
       <p className="table-meta">{matches.length} match(es) shown</p>
       <table>
+        <caption className="sr-only">Filtered World Cup match schedule</caption>
         <thead>
           <tr>
-            <th>Date</th>
-            <th>Group</th>
-            <th>Match</th>
-            <th>Venue</th>
+            <th scope="col">Date</th>
+            <th scope="col">Group</th>
+            <th scope="col">Match</th>
+            <th scope="col">Venue</th>
           </tr>
         </thead>
         <tbody>
