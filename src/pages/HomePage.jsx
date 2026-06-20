@@ -23,7 +23,7 @@ export default function HomePage() {
   }, [byCode, byTeam, selectedCountry]);
 
   return (
-    <section className="stack-lg">
+    <section className="hero-grid">
       <div className="card globe-panel">
         <div className="title-row">
           <h2>Interactive Globe</h2>

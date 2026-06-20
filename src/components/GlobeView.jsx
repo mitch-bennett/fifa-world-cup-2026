@@ -6,12 +6,11 @@ export default function GlobeView({ countries, selectedCode, onCountrySelect, au
   const wrapperRef = useRef(null);
   const [dimensions, setDimensions] = useState({ width: 760, height: 520 });
 
-  const pointsData = useMemo(
+  const markersData = useMemo(
     () =>
       countries.map((country) => ({
         ...country,
-        size: country.code === selectedCode ? 0.62 : 0.4,
-        color: country.code === selectedCode ? '#00d1ff' : '#f9d342',
+        selected: country.code === selectedCode,
       })),
     [countries, selectedCode],
   );
@@ -23,6 +22,9 @@ export default function GlobeView({ countries, selectedCode, onCountrySelect, au
     const controls = globeRef.current.controls();
     controls.autoRotate = autoRotate;
     controls.autoRotateSpeed = 0.45;
+    // Wheel zooms the globe; the side-by-side layout keeps the page short
+    // enough that this no longer fights with page scrolling.
+    controls.enableZoom = true;
   }, [autoRotate]);
 
   useEffect(() => {
@@ -33,7 +35,9 @@ export default function GlobeView({ countries, selectedCode, onCountrySelect, au
     if (!selected) {
       return;
     }
-    globeRef.current.pointOfView({ lat: selected.lat, lng: selected.lng, altitude: 1.65 }, 700);
+    // Recenter on the selected country but preserve the user's current zoom.
+    const { altitude } = globeRef.current.pointOfView();
+    globeRef.current.pointOfView({ lat: selected.lat, lng: selected.lng, altitude }, 700);
   }, [countries, selectedCode]);
 
   useEffect(() => {
@@ -67,14 +71,23 @@ export default function GlobeView({ countries, selectedCode, onCountrySelect, au
         backgroundColor="rgba(0,0,0,0)"
         globeImageUrl="https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg"
         bumpImageUrl="https://unpkg.com/three-globe/example/img/earth-topology.png"
-        pointsData={pointsData}
-        pointAltitude="size"
-        pointColor="color"
-        pointRadius={0.25}
         atmosphereColor="#7dc7ff"
         atmosphereAltitude={0.16}
-        pointLabel={(d) => `${d.flag} ${d.name}`}
-        onPointClick={(point) => onCountrySelect(point.code)}
+        htmlElementsData={markersData}
+        htmlLat="lat"
+        htmlLng="lng"
+        htmlAltitude={0.012}
+        htmlElement={(d) => {
+          const el = document.createElement('button');
+          el.type = 'button';
+          el.className = `globe-flag-marker${d.selected ? ' selected' : ''}`;
+          el.textContent = d.flag;
+          el.title = `${d.flag} ${d.name}`;
+          el.setAttribute('aria-label', d.name);
+          el.style.pointerEvents = 'auto';
+          el.onclick = () => onCountrySelect(d.code);
+          return el;
+        }}
       />
     </div>
   );
