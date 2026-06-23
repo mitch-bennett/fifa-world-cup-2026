@@ -270,6 +270,13 @@ nav {
   margin-top: 0.5rem;
 }
 
+/* MapLibre popups render on a white background; keep their text dark so it
+   isn't invisible against the app's light-on-dark theme color. */
+.maplibregl-popup-content {
+  color: #1a1100;
+  font-weight: 600;
+}
+
 .group-card h3 {
   margin-bottom: 0.8rem;
 }

@@ -11,7 +11,12 @@
 # For a simple LAN-only deploy WITHOUT a reverse proxy, use docker-compose.lan.yml instead.
 services:
   wc2026:
-    build: .
+    build:
+      context: .
+      args:
+        # English map tiles. Set VITE_GEOAPIFY_KEY in the host env (or the
+        # Portainer stack's environment); empty falls back to OpenStreetMap.
+        VITE_GEOAPIFY_KEY: ${VITE_GEOAPIFY_KEY:-}
     image: wc2026:latest
     container_name: wc2026
     restart: unless-stopped

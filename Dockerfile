@@ -4,6 +4,10 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm ci
 COPY . .
+# Optional: Geoapify key for English-labeled map tiles. Passed as a build arg
+# (compose forwards it from the host env); Vite bakes VITE_* vars in at build.
+ARG VITE_GEOAPIFY_KEY=""
+ENV VITE_GEOAPIFY_KEY=$VITE_GEOAPIFY_KEY
 RUN npm run build
 
 # Stage 2: serve the static files with nginx
