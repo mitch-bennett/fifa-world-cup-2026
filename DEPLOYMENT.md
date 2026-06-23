@@ -11,6 +11,25 @@ This guide is safe to publish publicly. Keep hostnames, IPs, tokens, and private
 | `docker-compose.lan.yml` | LAN deployment with published port |
 | `docker-compose.yml` | Reverse-proxy deployment on external `proxy` network |
 | `deploy/nginx-proxy-manager/docker-compose.yml` | Optional Nginx Proxy Manager stack |
+| `.env.example` | Template for the optional Geoapify map-tile key |
+
+## 1a) Map Tile Key (Optional, English Labels)
+
+The country-page maps render English labels when a free
+[Geoapify](https://www.geoapify.com/) key is supplied as the build arg
+`VITE_GEOAPIFY_KEY`. Without it, the maps fall back to OpenStreetMap raster
+tiles (local-language labels) and deployment still works.
+
+Both compose files forward `${VITE_GEOAPIFY_KEY}` from the environment into the
+Docker build. To set it:
+
+- **CLI:** create a `.env` next to the compose file (or export the variable),
+  e.g. `VITE_GEOAPIFY_KEY=your_key_here`, then build.
+- **Portainer:** add `VITE_GEOAPIFY_KEY` under the stack's *Environment
+  variables* before deploying.
+
+The key is baked into the static bundle at build time, so it is visible to
+browsers — restrict it to your domain/IP in the Geoapify dashboard.
 
 ## 2) Safe Public Docs Pattern
 

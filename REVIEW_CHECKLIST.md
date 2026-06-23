@@ -34,9 +34,11 @@ How to fill:
 - Status: PARTIAL
 - Comments: renders but is very dark, should spin to center the country
 
-### 2.3 2D map renders and marker label matches country
+### 2.3 English-labeled capital map renders with correct capital marker
 - Status: PARTIAL
-- Comments: change to highlight the country capital, not center
+- Comments: change to highlight the country capital, not center. Addressed:
+  MapLibre map now centers on the capital with an orange capital marker, and
+  labels are localized to English (Geoapify vector tiles via VITE_GEOAPIFY_KEY).
 
 ### 2.4 Fixtures list shows only that team's matches
 - Status: PARTIAL

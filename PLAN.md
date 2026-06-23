@@ -18,7 +18,7 @@ Deployed locally as a static site inside a Docker container.
 |------|----------|
 | Frontend stack | **React + Vite** |
 | 3D globe | **`react-globe.gl`** (wraps three.js / globe.gl) |
-| 2D map | **`react-leaflet`** (Leaflet + OpenStreetMap tiles) |
+| 2D map | **MapLibre GL** vector tiles (Geoapify when `VITE_GEOAPIFY_KEY` is set, OpenStreetMap raster fallback); labels relabeled to **English** |
 | Routing | **React Router** |
 | Data source | **Static local JSON** bundled in the app |
 | Country/team detail | **Rich profile** (country facts + team info + fixtures + mini-globe + 2D map) |
@@ -30,7 +30,7 @@ Deployed locally as a static site inside a Docker container.
 | Route | Page | Description |
 |-------|------|-------------|
 | `/` | **Globe / Home** | Full-screen interactive globe. Participating countries are highlighted/marked. Click a country → navigate to its profile. Spin, zoom, hover for name tooltip. |
-| `/country/:code` | **Country / Team Profile** | Rich profile (see §5). Includes a **mini-globe** centered/highlighted on the country and a **2D Leaflet map** of the country and surrounding area. |
+| `/country/:code` | **Country / Team Profile** | Rich profile (see §5). Includes a **mini-globe** centered/highlighted on the country and a **2D MapLibre map** (English labels) of the country and surrounding area. |
 | `/groups` | **Groups Overview** | All 12 groups (A–L) summarized as cards/tables. Clicking a country shows a summary (same `CountrySummary` component used elsewhere). |
 | `/schedule` | **Schedule** | Embedded match schedule (from static JSON), filterable by group/date/team. Prominent links to live & recent scores. |
 | `*` | **404 / Not Found** | Fallback. |
@@ -40,7 +40,7 @@ Deployed locally as a static site inside a Docker container.
 - `Globe` — main interactive globe (home page).
 - `MiniGlobe` — small non-interactive (or lightly interactive) globe that highlights one country; reused on every country profile.
 - `CountrySummary` — compact summary card (flag, group, rank, next match). Reused by the globe click-through preview AND the groups page.
-- `CountryMap2D` — `react-leaflet` map focused on one country + surrounding region.
+- `CountryMap2D` — MapLibre GL vector map (English labels) focused on one country + surrounding region.
 - `ScheduleTable` / `MatchCard` — schedule rendering.
 - `ScoresLinks` — buttons linking to external live/recent scores.
 - `GroupCard` — one group's standings/teams.
@@ -118,7 +118,7 @@ fifa-world-cup-2026/
 
 **Phase 0 — Scaffold & tooling**
 - Replace the Python template with a Node/React app (or keep Python files aside; this is a web project).
-- `npm create vite@latest` (React), add `react-router-dom`, `react-globe.gl`, `three`, `react-leaflet`, `leaflet`.
+- `npm create vite@latest` (React), add `react-router-dom`, `react-globe.gl`, `three`, `maplibre-gl`.
 - Set up `Layout`, `NavBar`, routing skeleton with placeholder pages.
 
 **Phase 1 — Data layer**
@@ -133,7 +133,7 @@ fifa-world-cup-2026/
 **Phase 3 — Country profile**
 - `CountryProfile` page composing facts + team info + fixtures.
 - `MiniGlobe` highlighting the country.
-- `CountryMap2D` (`react-leaflet`) centered on country with surrounding area.
+- `CountryMap2D` (MapLibre GL, English labels) centered on country with surrounding area.
 - `ScoresLinks`.
 
 **Phase 4 — Groups overview**
